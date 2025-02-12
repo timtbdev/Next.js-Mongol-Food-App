@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Noto_Sans } from "next/font/google";
+import { Bricolage_Grotesque, Noto_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/tailwind.css";
 import Footer from "@/components/footer/main";
 import Header from "@/components/header/main";
+import Container from "@/components/main/container";
+import Main from "@/components/main/main";
 import TailwindIndicator from "@/components/tailwind-indicator";
 import seoConfig from "@/config/seo";
 import { cn, getBaseUrl } from "@/lib/utils";
@@ -19,7 +21,10 @@ const fontCode = localFont({
   variable: "--font-code",
 });
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 const noto_sans = Noto_Sans({ subsets: ["latin"], variable: "--font-noto" });
 
@@ -205,9 +210,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header />
-            {children}
-            <Footer />
+            <Main>
+              <Header />
+              <Container>{children}</Container>
+              <Footer />
+            </Main>
             <Analytics />
             <Toaster position="top-center" />
           </ThemeProvider>

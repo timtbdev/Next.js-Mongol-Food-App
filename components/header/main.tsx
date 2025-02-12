@@ -10,7 +10,7 @@ const Header = () => {
   const path = usePathname();
   const currentPath = `/${path.split("/")[1]}`;
   return (
-    <header className="border-dark-gray/50 sticky top-0 z-10 border-b bg-zinc-900 backdrop-blur-lg">
+    <header className="border-dark-gray/50 sticky top-0 z-10 border-y-2 border-dashed bg-zinc-900 backdrop-blur-lg">
       <nav
         aria-label="Navigation"
         className="mx-auto flex max-w-5xl items-center justify-between px-6 py-2.5 md:py-5"

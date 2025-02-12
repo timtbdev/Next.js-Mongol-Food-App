@@ -73,7 +73,7 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
                   }}
                   className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl px-6 pb-10 pt-20"
                 >
-                  <ul className="space-y-2">
+                  <ul className="space-y-4">
                     {menuConfig.map((menuItem) => (
                       <li key={menuItem.slug}>
                         <CloseButton
@@ -81,9 +81,9 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
                           href={menuItem.slug}
                           className={`${
                             currentPath === menuItem.slug
-                              ? "bg-zinc-800 px-6 text-white"
-                              : "bg-zinc-900 px-6 text-zinc-400 hover:bg-zinc-800 hover:text-white"
-                          } text-md group flex gap-x-4 rounded-full p-4 font-semibold`}
+                              ? "bg-zinc-800 text-white"
+                              : "bg-zinc-900 text-zinc-400 hover:bg-zinc-800 hover:text-white"
+                          } text-md/5 group flex rounded-full px-6 py-4 font-semibold tracking-tight`}
                           onClick={close}
                         >
                           {menuItem.title}

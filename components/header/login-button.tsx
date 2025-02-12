@@ -11,7 +11,7 @@ const LoginButton = ({ className }: { className?: string }) => {
         className,
       )}
     >
-      <UserIcon className="text-brand-700 group-hover:text-brand-500 size-[26px]" />
+      <UserIcon className="text-brand-500 group-hover:text-brand-400 size-[26px]" />
     </button>
   );
 };
