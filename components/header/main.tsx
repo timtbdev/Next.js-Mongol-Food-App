@@ -16,10 +16,12 @@ const Header = () => {
         className="mx-auto flex max-w-5xl items-center justify-between px-6 py-2.5 md:py-5"
       >
         <div className="z-10 flex flex-1 justify-start">
-          <Logo />
+          <Logo className="hidden md:flex" />
           <MobileNavigationLinks currentPath={currentPath} />
         </div>
         <DesktopNavigationLinks currentPath={currentPath} />
+        <Logo className="flex md:hidden" />
+
         <div className="flex flex-1 justify-end">
           <LoginButton />
         </div>

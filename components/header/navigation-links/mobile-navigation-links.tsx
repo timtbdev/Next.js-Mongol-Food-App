@@ -17,7 +17,7 @@ interface Props {
 
 const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
   return (
-    <Popover className="lg:hidden">
+    <Popover className="md:hidden">
       {({ open, close }) => (
         <>
           <PopoverButton

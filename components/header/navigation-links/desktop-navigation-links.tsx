@@ -11,7 +11,7 @@ interface Props {
 
 const DesktopNavigationLinks: FC<Props> = ({ currentPath }) => {
   return (
-    <PopoverGroup className="hidden max-w-5xl gap-x-5 sm:flex">
+    <PopoverGroup className="hidden max-w-5xl gap-x-5 md:flex">
       {menuConfig.map((menuItem: MenuItemType) => (
         <Link
           key={menuItem.title}
