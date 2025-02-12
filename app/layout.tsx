@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque as FontSans } from "next/font/google";
+import { Inter, Noto_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "@/styles/tailwind.css";
+import Header from "@/components/header/main";
 import TailwindIndicator from "@/components/tailwind-indicator";
 import seoConfig from "@/config/seo";
 import { cn, getBaseUrl } from "@/lib/utils";
@@ -11,11 +13,14 @@ import { ViewTransitions } from "next-view-transitions";
 import { Toaster } from "react-hot-toast";
 
 // Font Configuration
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
+const fontCode = localFont({
+  src: "../assets/JetBrainsMonoNL-Medium.ttf",
+  variable: "--font-code",
 });
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const noto_sans = Noto_Sans({ subsets: ["latin"], variable: "--font-noto" });
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -179,14 +184,27 @@ export default function RootLayout({
 }) {
   return (
     <ViewTransitions>
-      <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
-        <body className={cn("antialiased", fontSans.variable)}>
+      <html
+        lang="en"
+        className={cn(
+          inter.variable,
+          fontCode.variable,
+          noto_sans.variable,
+          "min-h-full scroll-smooth",
+        )}
+        suppressHydrationWarning
+      >
+        <body
+          className="flex h-full flex-col bg-zinc-900 font-sans text-gray-200 antialiased"
+          suppressHydrationWarning={true}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
+            <Header />
             {children}
             <Analytics />
             <Toaster position="top-center" />
