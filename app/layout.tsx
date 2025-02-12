@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/tailwind.css";
+import Footer from "@/components/footer/main";
 import Header from "@/components/header/main";
 import TailwindIndicator from "@/components/tailwind-indicator";
 import seoConfig from "@/config/seo";
@@ -206,6 +207,7 @@ export default function RootLayout({
           >
             <Header />
             {children}
+            <Footer />
             <Analytics />
             <Toaster position="top-center" />
           </ThemeProvider>
