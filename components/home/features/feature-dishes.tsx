@@ -8,10 +8,10 @@ import {
   Plug,
 } from "lucide-react";
 import Link from "next/link";
-import { Icons } from "../../icons";
+import { Icons } from "../icons";
 import { FeatureCard } from "./feature-card";
 
-export const FeatureDishesSection = () => {
+export const FeatureDishes = () => {
   const headingBaseClass = "text-4xl font-semibold tracking-tight sm:text-5xl";
   return (
     <section className="border-dark-gray/50 relative mx-auto flex w-full flex-col items-center gap-8 border-y-2 border-dashed bg-black/20 py-10 sm:py-20">
@@ -30,7 +30,18 @@ export const FeatureDishesSection = () => {
         </span>
       </h2>
       <p className="text-muted-light max-w-2xl text-pretty text-center text-xl sm:text-2xl">
-        Mongolian food is hearty, bold, and full of surprises!
+        Mongolian food is{" "}
+        <span className="text-xl font-semibold text-white sm:text-2xl">
+          ❤️hearty
+        </span>
+        ,{" "}
+        <span className="text-xl font-semibold text-white sm:text-2xl">
+          🥩bold
+        </span>
+        , and full of{" "}
+        <span className="text-xl font-semibold text-white sm:text-2xl">
+          🎉surprises!
+        </span>
       </p>
       <div id="features">
         <div className="mx-auto grid grid-cols-1 gap-6 sm:w-[80%] sm:grid-cols-2 lg:grid-cols-3">
