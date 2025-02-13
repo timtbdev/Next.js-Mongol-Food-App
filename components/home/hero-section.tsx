@@ -6,7 +6,7 @@ import Link from "next/link";
 const HeroSection = () => {
   const headingBaseClass =
     "text-4xl font-bold text-zinc-300 sm:text-5xl md:text-6xl";
-  const listItemClass = "text-zinc-400 text-2xl/7 font-semibold";
+  const listItemClass = "text-zinc-400 text-xl/7 font-semibold sm:text-2xl";
   return (
     <section className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8">
       <div className="mx-auto flex w-full flex-col items-center gap-5 px-4 py-6 md:gap-7 md:px-0 md:py-10">

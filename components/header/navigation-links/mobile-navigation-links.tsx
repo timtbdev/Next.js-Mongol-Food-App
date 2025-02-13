@@ -71,7 +71,7 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
                     y: -32,
                     transition: { duration: 0.2 },
                   }}
-                  className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl px-6 pb-10 pt-20"
+                  className="border-dark-gray/50 absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl border-b-2 bg-zinc-900 px-6 pb-10 pt-20"
                 >
                   <ul className="space-y-4">
                     {menuConfig.map((menuItem) => (
