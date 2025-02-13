@@ -9,9 +9,10 @@ interface Props {
 
 const Logo: FC<Props> = ({ className }) => {
   return (
-    <Link href="/" className={cn("group mr-4 items-center", className)}>
+    <Link href="/" className={cn("group z-10 mr-4 items-center", className)}>
       <div className="rounded-full bg-zinc-800 p-2">
-        <LogoIcon className="group-hover:text-brand-400 text-brand-500 size-[28px]" />
+        <LogoIcon className="group-hover:text-brand-400 text-brand-500 hidden size-[28px] sm:flex" />
+        <LogoIcon className="size-[28px] text-zinc-400 group-hover:text-white lg:hidden" />
       </div>
 
       <div className="ml-2 text-lg font-extrabold text-zinc-400 group-hover:text-white">

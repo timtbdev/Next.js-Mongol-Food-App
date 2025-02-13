@@ -82,7 +82,7 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
                           className={`${
                             currentPath === menuItem.slug
                               ? "bg-zinc-800 text-white"
-                              : "bg-zinc-900 text-zinc-400 hover:bg-zinc-800 hover:text-white"
+                              : "border-dark-gray/50 border-2 border-dashed bg-zinc-900 text-zinc-400 hover:bg-zinc-800 hover:text-white"
                           } text-md/5 group flex rounded-full px-6 py-4 font-semibold tracking-tight`}
                           onClick={close}
                         >

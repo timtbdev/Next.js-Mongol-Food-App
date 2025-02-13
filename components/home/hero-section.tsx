@@ -46,7 +46,7 @@ const HeroSection = () => {
           </ul>
         </div>
 
-        <div className="relative flex w-full max-w-sm">
+        <div className="relative flex w-full max-w-xs">
           <Link
             href="/docs/getting-started/first-steps"
             className="button from-brand-300 to-brand-400 hover:bg-brand-200/75 relative mt-4 inline-flex h-14 w-full cursor-pointer items-center justify-center gap-1.5 rounded-md bg-gradient-to-br px-5 py-2.5 font-semibold text-zinc-800 shadow-xl transition hover:scale-[0.98] active:scale-[0.95]"
