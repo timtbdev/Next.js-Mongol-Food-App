@@ -14,7 +14,9 @@ const HeroSection = () => {
           <span className={headingBaseClass}>
             Mongolian{" "}
             <span
-              className={cn("relative whitespace-nowrap", headingBaseClass)}
+              className={cn(
+                "text-brand-400 relative whitespace-nowrap text-4xl font-bold sm:text-5xl md:text-6xl",
+              )}
             >
               <span className="bg-brand-200/10 absolute -left-[2.5%] -top-[2.5%] z-0 h-[105%] w-[105%] -rotate-1" />{" "}
               Food

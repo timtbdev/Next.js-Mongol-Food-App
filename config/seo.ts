@@ -2,7 +2,7 @@ import { SeoType } from "@/types";
 
 // This file contains the core meta data for the application
 const seoConfig: SeoType = {
-  title: "Meat Lovers, This Way! 🥩🔥",
+  title: "Mongolian Food | This Way!",
   subTitle: "Burns Calories? Nope. Worth It? Absolutely!",
   ogImage: "/images/mongol-food-opengraph.png",
   twitterImage: "/images/mongol-food-twitter.png",
