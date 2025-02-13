@@ -3,7 +3,7 @@ import { SeoType } from "@/types";
 // This file contains the core meta data for the application
 const seoConfig: SeoType = {
   title: "Mongolian Food | This Way!",
-  subTitle: "Burns Calories? Nope. Worth It? Absolutely!",
+  subTitle: " Mongolian food is hearty, bold, and full of surprises!",
   ogImage: "/images/opengraph-image.png",
   twitterImage: "/images/twitter-image.png",
   author: {
@@ -12,8 +12,7 @@ const seoConfig: SeoType = {
     twitterAddress: "@timtbdev",
     email: "timtb.dev@gmail.com",
   },
-  description:
-    "Find the best Mongolian eats anywhere, skip the tourist traps, and feast like a true nomad—no second-guessing, just great food!.",
+  description: "Find the best Mongolian dishes, restaurants, and recipes.",
   tags: [
     // Mongolian food must-tries
     "Mongolian food",
