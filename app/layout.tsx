@@ -11,7 +11,6 @@ import seoConfig from "@/config/seo";
 import { cn, getBaseUrl } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
-import { ThemeProvider } from "next-themes";
 import { ViewTransitions } from "next-view-transitions";
 import { Toaster } from "react-hot-toast";
 
@@ -201,23 +200,16 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <body
-          className="flex h-full flex-col bg-zinc-900 font-sans text-gray-200 antialiased"
+          className="selection:bg-brand-500 flex h-full flex-col bg-zinc-900 font-sans text-gray-200 antialiased selection:text-white"
           suppressHydrationWarning={true}
         >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Main>
-              <Header />
-              <Container>{children}</Container>
-              <Footer />
-            </Main>
-            <Analytics />
-            <Toaster position="top-center" />
-          </ThemeProvider>
+          <Main>
+            <Header />
+            <Container>{children}</Container>
+            <Footer />
+          </Main>
+          <Analytics />
+          <Toaster position="top-center" />
           <TailwindIndicator />
         </body>
         <GoogleAnalytics gaId="G-MD5KF34J62" />
