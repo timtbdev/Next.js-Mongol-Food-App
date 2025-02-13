@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer className="border-dark-gray/50 border-y-2 border-dashed bg-black/20">
         <div className="mx-auto max-w-7xl overflow-hidden p-6 sm:py-10 lg:px-8">
-          <NavigationLinks />
+          <NavigationLinks className="hidden sm:flex" />
           <SocialMediaAccounts />
           <Copyright />
         </div>

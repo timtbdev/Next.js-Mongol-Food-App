@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 
-const Emoji: FC<Props> = ({ currentPath, emoji, className = "" }) => {
+const MenuEmoji: FC<Props> = ({ currentPath, emoji, className = "" }) => {
   return (
     <span
       className={cn(
@@ -24,4 +24,4 @@ const Emoji: FC<Props> = ({ currentPath, emoji, className = "" }) => {
   );
 };
 
-export default Emoji;
+export default MenuEmoji;

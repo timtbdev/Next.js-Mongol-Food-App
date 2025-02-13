@@ -1,3 +1,5 @@
+import MenuEmoji from "@/components/ui/menu/menu-emoji";
+import MenuTitle from "@/components/ui/menu/menu-title";
 import menuConfig from "@/config/menu";
 import { cn } from "@/lib/utils";
 import {
@@ -10,8 +12,6 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "next-view-transitions";
 import { FC } from "react";
-import Emoji from "./emoji";
-import Title from "./title";
 
 interface Props {
   currentPath: string;
@@ -89,12 +89,12 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath, className }) => {
                           } group inline-flex w-full gap-2 rounded-full px-6 py-4`}
                           onClick={close}
                         >
-                          <Emoji
+                          <MenuEmoji
                             currentPath={currentPath === menuItem.slug}
                             emoji={menuItem.emoji}
                             className="mr-4 text-2xl"
                           />
-                          <Title
+                          <MenuTitle
                             title={menuItem.title}
                             currentPath={currentPath === menuItem.slug}
                           />

@@ -1,11 +1,11 @@
+import MenuEmoji from "@/components/ui/menu/menu-emoji";
+import MenuTitle from "@/components/ui/menu/menu-title";
 import menuConfig from "@/config/menu";
 import { cn } from "@/lib/utils";
 import { MenuItemType } from "@/types";
 import { PopoverGroup } from "@headlessui/react";
 import { Link } from "next-view-transitions";
 import { FC } from "react";
-import Emoji from "./emoji";
-import Title from "./title";
 
 interface Props {
   currentPath: string;
@@ -31,12 +31,12 @@ const DesktopNavigationLinks: FC<Props> = ({ currentPath, className }) => {
           aria-current={currentPath === menuItem.slug ? "page" : undefined}
           prefetch={true}
         >
-          <Emoji
+          <MenuEmoji
             currentPath={currentPath === menuItem.slug}
             emoji={menuItem.emoji}
             className="hidden lg:flex"
           />
-          <Title
+          <MenuTitle
             currentPath={currentPath === menuItem.slug}
             title={menuItem.title}
           />

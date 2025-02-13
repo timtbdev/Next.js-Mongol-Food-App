@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 
-const Title: FC<Props> = ({ currentPath, title, className = "" }) => {
+const MenuTitle: FC<Props> = ({ currentPath, title, className = "" }) => {
   return (
     <span
       className={cn("text-lg font-semibold", {
@@ -21,4 +21,4 @@ const Title: FC<Props> = ({ currentPath, title, className = "" }) => {
   );
 };
 
-export default Title;
+export default MenuTitle;

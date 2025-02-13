@@ -7,8 +7,9 @@ const HeroSection = () => {
   const headingBaseClass =
     "text-4xl font-bold text-zinc-300 sm:text-5xl md:text-6xl";
   const listItemClass = "text-zinc-400 text-xl/7 font-semibold sm:text-2xl";
+
   return (
-    <section className="relative mx-auto flex w-full flex-col items-center gap-8 py-10 sm:py-20">
+    <section className="sm:pb-26 relative mx-auto flex w-full flex-col items-center gap-8 py-10 sm:py-20">
       <div className="mx-auto flex w-full flex-col items-center gap-5">
         <h1 className="inline-flex flex-col items-center gap-1 text-center leading-none tracking-tight">
           <span className={headingBaseClass}>
@@ -42,7 +43,7 @@ const HeroSection = () => {
           </ul>
         </div>
 
-        <div className="relative flex w-full max-w-xs">
+        <div className="relative mb-10 flex w-full max-w-xs sm:mb-0">
           <Link
             href="/docs/getting-started/first-steps"
             className="button from-brand-300 to-brand-400 hover:bg-brand-200/75 relative mt-4 inline-flex h-14 w-full cursor-pointer items-center justify-center gap-1.5 rounded-md bg-gradient-to-br px-5 py-2.5 font-semibold text-zinc-800 shadow-xl transition hover:scale-[0.98] active:scale-[0.95]"
