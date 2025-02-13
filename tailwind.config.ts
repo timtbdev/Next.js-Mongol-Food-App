@@ -21,6 +21,7 @@ const config = {
     },
     extend: {
       fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
         heading: ["var(--font-heading)", ...fontFamily.sans],
         noto: ["var(--font-noto)", ...fontFamily.sans],
         code: ["var(--font-code)", ...fontFamily.sans],
