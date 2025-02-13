@@ -2,19 +2,23 @@ import { MenuItemType } from "@/types"; // Menu Configuration
 
 const menuConfig: MenuItemType[] = [
   {
-    title: "✨ Home",
+    emoji: "✨",
+    title: "Home",
     slug: "/",
   },
   {
-    title: "🔥 Dishes",
+    emoji: "🔥",
+    title: "Dishes",
     slug: "/dishes",
   },
   {
-    title: "👨‍🍳 Restaurants",
+    emoji: "👨‍🍳",
+    title: "Restaurants",
     slug: "/restaurants",
   },
   {
-    title: "🤝 Contact",
+    emoji: "🤝",
+    title: "Contact",
     slug: "/contact",
   },
 ];

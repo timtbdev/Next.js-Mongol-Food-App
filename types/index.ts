@@ -25,6 +25,7 @@ export type SocialItemType = {
 };
 
 export type MenuItemType = {
+  emoji: string;
   title: string;
   slug: string;
 };

@@ -1,0 +1,27 @@
+import { cn } from "@/lib/utils";
+import React, { FC } from "react";
+
+interface Props {
+  currentPath: boolean;
+  emoji: string;
+  className?: string;
+}
+
+const Emoji: FC<Props> = ({ currentPath, emoji, className = "" }) => {
+  return (
+    <span
+      className={cn(
+        "text-lg duration-150 ease-in-out",
+        {
+          "group-hover:rotate-3 group-hover:scale-125": !currentPath,
+          "rotate-3 scale-125": currentPath,
+        },
+        className,
+      )}
+    >
+      {emoji}
+    </span>
+  );
+};
+
+export default Emoji;

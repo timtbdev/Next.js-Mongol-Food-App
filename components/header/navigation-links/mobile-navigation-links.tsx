@@ -10,14 +10,17 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "next-view-transitions";
 import { FC } from "react";
+import Emoji from "./emoji";
+import Title from "./title";
 
 interface Props {
   currentPath: string;
+  className?: string;
 }
 
-const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
+const MobileNavigationLinks: FC<Props> = ({ currentPath, className }) => {
   return (
-    <Popover className="md:hidden">
+    <Popover className={cn(className)}>
       {({ open, close }) => (
         <>
           <PopoverButton
@@ -81,12 +84,20 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath }) => {
                           href={menuItem.slug}
                           className={`${
                             currentPath === menuItem.slug
-                              ? "bg-zinc-800 text-white"
-                              : "border-dark-gray/50 border-2 border-dashed bg-zinc-900 text-zinc-400 hover:bg-zinc-800 hover:text-white"
-                          } text-md/5 group flex rounded-full px-6 py-4 font-semibold tracking-tight`}
+                              ? "bg-zinc-800"
+                              : "border-dark-gray/50 border-2 border-dashed bg-zinc-900 hover:bg-zinc-800"
+                          } group inline-flex w-full gap-2 rounded-full px-6 py-4`}
                           onClick={close}
                         >
-                          {menuItem.title}
+                          <Emoji
+                            currentPath={currentPath === menuItem.slug}
+                            emoji={menuItem.emoji}
+                            className="mr-4 text-2xl"
+                          />
+                          <Title
+                            title={menuItem.title}
+                            currentPath={currentPath === menuItem.slug}
+                          />
                         </CloseButton>
                       </li>
                     ))}

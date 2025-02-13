@@ -41,7 +41,7 @@ const FeatureDishes: FC<Props> = ({ categories }) => {
         </span>
       </p>
       <div id="features">
-        <div className="mx-auto grid grid-cols-1 gap-6 sm:w-[80%] sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid grid-cols-1 gap-6 px-6 sm:w-[80%] sm:grid-cols-2 sm:px-2 lg:grid-cols-3">
           {categories.map((category) => (
             <FeatureCard key={category.slug} category={category} />
           ))}
