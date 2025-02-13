@@ -8,8 +8,8 @@ const HeroSection = () => {
     "text-4xl font-bold text-zinc-300 sm:text-5xl md:text-6xl";
   const listItemClass = "text-zinc-400 text-xl/7 font-semibold sm:text-2xl";
   return (
-    <section className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8">
-      <div className="mx-auto flex w-full flex-col items-center gap-5 px-4 py-6 md:gap-7 md:px-0 md:py-10">
+    <section className="relative mx-auto mb-10 flex w-full flex-col items-center gap-8 py-10 sm:py-20">
+      <div className="mx-auto flex w-full flex-col items-center gap-5">
         <h1 className="inline-flex flex-col items-center gap-1 text-center leading-none tracking-tight">
           <span className={headingBaseClass}>
             Mongolian{" "}
@@ -49,7 +49,7 @@ const HeroSection = () => {
         <div className="relative flex w-full max-w-sm">
           <Link
             href="/docs/getting-started/first-steps"
-            className="button from-brand-300 to-brand-400 hover:bg-brand-200/75 relative z-10 mt-4 inline-flex h-14 w-full cursor-pointer items-center justify-center gap-1.5 rounded-md bg-gradient-to-br px-5 py-2.5 font-semibold text-zinc-800 shadow-xl transition hover:scale-[0.98] active:scale-[0.95]"
+            className="button from-brand-300 to-brand-400 hover:bg-brand-200/75 relative mt-4 inline-flex h-14 w-full cursor-pointer items-center justify-center gap-1.5 rounded-md bg-gradient-to-br px-5 py-2.5 font-semibold text-zinc-800 shadow-xl transition hover:scale-[0.98] active:scale-[0.95]"
           >
             Take Me to the Food
             <ArrowRightIcon className="size-5" />

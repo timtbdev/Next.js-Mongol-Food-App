@@ -4,8 +4,8 @@ import { SeoType } from "@/types";
 const seoConfig: SeoType = {
   title: "Mongolian Food | This Way!",
   subTitle: "Burns Calories? Nope. Worth It? Absolutely!",
-  ogImage: "/images/mongol-food-opengraph.png",
-  twitterImage: "/images/mongol-food-twitter.png",
+  ogImage: "/images/opengraph-image.png",
+  twitterImage: "/images/twitter-image.png",
   author: {
     name: "Tim Baz",
     twitterUrl: "https://x.com/timtbdev",
