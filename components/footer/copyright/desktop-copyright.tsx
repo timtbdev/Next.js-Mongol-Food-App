@@ -20,7 +20,7 @@ const DesktopCopyright = () => {
       <div className="flex flex-1 justify-end">
         <Url
           title="RSS Feed"
-          url={getBaseUrl() + "/rss.xml"}
+          url={getBaseUrl("rss.xml")}
           icon={<FaSquareRss size={18} />}
           className={baseClass}
         />

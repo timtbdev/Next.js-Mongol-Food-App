@@ -16,7 +16,7 @@ const MobileCopyright = () => {
         <span> | </span>
         <Url
           title="RSS Feed"
-          url={getBaseUrl() + "/rss.xml"}
+          url={getBaseUrl("rss.xml")}
           icon={<FaSquareRss size={18} />}
           className={baseClass}
         />

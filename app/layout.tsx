@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
   alternates: {
     types: {
-      "application/rss+xml": `${getBaseUrl()}/rss.xml`,
+      "application/rss+xml": getBaseUrl("/rss.xml"),
     },
   },
   appleWebApp: {
