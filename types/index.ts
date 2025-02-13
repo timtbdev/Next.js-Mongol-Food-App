@@ -28,3 +28,10 @@ export type MenuItemType = {
   title: string;
   slug: string;
 };
+
+export type CategoryType = {
+  category: string;
+  slug: string;
+  emoji: string;
+  description: string;
+};
