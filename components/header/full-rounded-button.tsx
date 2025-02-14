@@ -4,13 +4,14 @@ import React, { FC } from "react";
 
 interface Props {
   title?: string;
+  url: string;
   className?: string;
   Icon: React.ComponentType<{ className?: string }>;
 }
 
-const FullRoundedButton: FC<Props> = ({ title, Icon, className = "" }) => {
+const FullRoundedButton: FC<Props> = ({ title, url, Icon, className = "" }) => {
   return (
-    <Link href="/" className={cn("group z-10 mr-4 items-center", className)}>
+    <Link href={url} className={cn("group z-10 mr-4 items-center", className)}>
       <div className="rounded-full bg-zinc-800 p-2">
         <Icon className="md:text-brand-500 md:group-hover:text-brand-600 grou-hover:text-white size-[26px] text-zinc-400" />
       </div>

@@ -5,6 +5,7 @@ import FullRoundedButton from "./full-rounded-button";
 const LoginButton = ({ className }: { className?: string }) => {
   return (
     <FullRoundedButton
+      url="/login"
       Icon={UserIcon}
       className={cn("group-hover:text-white", className)}
     />

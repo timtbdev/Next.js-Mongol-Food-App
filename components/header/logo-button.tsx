@@ -8,7 +8,12 @@ interface Props {
 
 const LogoButton: FC<Props> = ({ className }) => {
   return (
-    <FullRoundedButton title="Mongol" Icon={LogoIcon} className={className} />
+    <FullRoundedButton
+      title="Mongol"
+      url="/"
+      Icon={LogoIcon}
+      className={className}
+    />
   );
 };
 
