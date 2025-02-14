@@ -3,7 +3,6 @@ import Card from "@/components/ui/home/card";
 import Section from "@/components/ui/home/section";
 import SectionSubtitle from "@/components/ui/home/section-subtitle";
 import SectionTitle from "@/components/ui/home/section-title";
-import { cn } from "@/lib/utils";
 import { CategoryType } from "@/types";
 import { FC } from "react";
 

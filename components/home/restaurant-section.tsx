@@ -6,11 +6,7 @@ import Disclaimer from "@/components/ui/home/disclaimer";
 import Section from "@/components/ui/home/section";
 import SectionSubtitle from "@/components/ui/home/section-subtitle";
 import SectionTitle from "@/components/ui/home/section-title";
-import {
-  Stargazer,
-  StargazerLoading,
-  StargazerMore,
-} from "../ui/home/restaurant-avatar";
+import { StargazerLoading, StargazerMore } from "../ui/home/restaurant-avatar";
 
 export const RestaurantSection = () => {
   const highlightClass = "text-xl font-semibold text-white sm:text-2xl";
