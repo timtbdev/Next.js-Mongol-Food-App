@@ -1,17 +1,20 @@
+import BigButton from "@/components/ui/home/big-button";
+import Card from "@/components/ui/home/card";
 import { cn } from "@/lib/utils";
 import { CategoryType } from "@/types";
-import Link from "next/link";
 import { FC } from "react";
-import FeatureCard from "./feature-card";
 
 interface Props {
   categories: CategoryType[];
 }
 
-const FeatureDishes: FC<Props> = ({ categories }) => {
+const DishesSection: FC<Props> = ({ categories }) => {
   const headingBaseClass = "text-4xl font-semibold tracking-tight sm:text-5xl";
   return (
-    <section className="border-dark-gray/50 relative mx-auto flex w-full flex-col items-center gap-8 border-y-2 border-dashed bg-black/20 py-10 sm:py-20">
+    <section
+      id="dishes"
+      className="border-dark-gray/50 relative mx-auto flex w-full flex-col items-center gap-8 border-y-2 border-dashed bg-black/20 py-10 sm:py-20"
+    >
       <h2 className="gap-1 text-center">
         <span className={cn("text-zinc-300", headingBaseClass)}>
           Find the best Mongolian{" "}
@@ -43,21 +46,13 @@ const FeatureDishes: FC<Props> = ({ categories }) => {
       <div id="features">
         <div className="mx-auto grid grid-cols-1 gap-6 px-6 sm:w-[80%] sm:grid-cols-2 sm:px-2 lg:grid-cols-3">
           {categories.map((category) => (
-            <FeatureCard key={category.slug} category={category} />
+            <Card key={category.slug} category={category} />
           ))}
         </div>
       </div>
-
-      <div className="mt-4 flex w-full max-w-xs">
-        <Link
-          href="/docs/getting-started/first-steps"
-          className="from-brand-300 to-brand-400 hover:bg-brand-200/75 mt-4 inline-flex h-14 w-full max-w-xs cursor-pointer items-center justify-center gap-1.5 rounded-md bg-gradient-to-br px-5 py-2.5 font-semibold text-zinc-800 shadow-xl transition hover:scale-[0.98] active:scale-[0.95]"
-        >
-          Let&apos;s Dive In &rarr;
-        </Link>
-      </div>
+      <BigButton title="Let's Dive In" url="/dishes" />
     </section>
   );
 };
 
-export default FeatureDishes;
+export default DishesSection;

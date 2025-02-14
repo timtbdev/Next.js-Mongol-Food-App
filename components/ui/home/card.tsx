@@ -6,7 +6,7 @@ export type Props = {
   category: CategoryType;
 };
 
-const FeatureCard: FC<Props> = ({ category }) => {
+const Card: FC<Props> = ({ category }) => {
   return (
     <Link
       href={`/category/${category.slug}`}
@@ -28,4 +28,4 @@ const FeatureCard: FC<Props> = ({ category }) => {
   );
 };
 
-export default FeatureCard;
+export default Card;
