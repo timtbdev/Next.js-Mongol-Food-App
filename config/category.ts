@@ -2,45 +2,40 @@ import { CategoryType } from "@/types";
 
 const categoryConfig: CategoryType[] = [
   {
-    category: "Meat-Based Delights",
-    slug: "meat-based-delights",
+    category: "Meat Dishes",
+    slug: "meat-dishes",
     emoji: "🥩",
-    description:
-      "Mongolians love meat! These dishes are rich, hearty, and packed with protein.",
+    description: "Mongolian meals packed with hearty, flavorful meats.",
   },
   {
-    category: "Dairy Heaven",
-    slug: "dairy-heaven",
+    category: "Dairy Foods",
+    slug: "dairy-foods",
     emoji: "🥛",
-    description:
-      "Mongolian nomads rely on dairy for nutrition, from fermented drinks to dried cheese snacks.",
+    description: "Milk-based treats from cheese to fermented drinks.",
   },
   {
-    category: "Breads & Doughy Goodies",
-    slug: "breads-doughy-goodies",
+    category: "Breads & Dough",
+    slug: "breads-dough",
     emoji: "🍞",
-    description:
-      "Mongolian breads range from crispy fried dough to soft, layered festival breads.",
+    description: "Crispy, soft, and fried breads loved by Mongolians.",
   },
   {
-    category: "Beverages & Specials",
-    slug: "beverages-specials",
+    category: "Drinks",
+    slug: "drinks",
     emoji: "🍹",
-    description: "Traditional Mongolian drinks, both refreshing and strong!",
+    description: "Traditional Mongolian drinks, from mild to strong.",
   },
   {
     category: "Soups & Stews",
     slug: "soups-stews",
     emoji: "🍲",
-    description:
-      "Mongolian hearty soups and stews, perfect for the cold winters.",
+    description: "Warm, rich broths perfect for cold weather.",
   },
   {
-    category: "Exotic & Rare Dishes",
-    slug: "exotic-rare-dishes",
+    category: "Exotic Foods",
+    slug: "exotic-foods",
     emoji: "🍖",
-    description:
-      "Uncommon and specialty Mongolian dishes with unique preparation methods.",
+    description: "Unique and rare Mongolian specialty dishes.",
   },
 ];
 
