@@ -1,3 +1,4 @@
+import FullRoundedButton from "@/components/ui/full-rounded-button";
 import BigButton from "@/components/ui/home/big-button";
 import Card from "@/components/ui/home/card";
 import Section from "@/components/ui/home/section";
@@ -15,6 +16,7 @@ const DishesSection: FC<Props> = ({ categories }) => {
   return (
     <div className="border-dark-gray/50 w-full border-y-2 border-dashed bg-black/20">
       <Section id="dishes">
+        <FullRoundedButton emoji="🏆" />
         <SectionTitle title="The Best Mongolian" highlight="dishes" />
         <SectionSubtitle>
           Mongolian food is <span className={highlightClass}>❤️hearty</span>,{" "}

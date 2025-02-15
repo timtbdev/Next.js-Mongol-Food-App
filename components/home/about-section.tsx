@@ -30,28 +30,20 @@ const AboutSection = () => {
                 <span className={highlightClass}>Bay Area, CA</span>.
               </p>
               <p className="text-xl/8 font-medium text-zinc-400">
-                If you own a{" "}
-                <span className={highlightClass}>Mongolian 🍜restaurant</span>,
-                run a <span className={highlightClass}>🎥YouTube channel</span>{" "}
-                about <span className={highlightClass}>Mongolian food</span>, or
-                work in{" "}
-                <span className={highlightClass}>
-                  Mongolia’s ✈️travel business
-                </span>
-                , I’d love to work together to help your business 📈grow.
+                Need a <span className={highlightClass}>🌎website</span> or
+                <span className={highlightClass}>📱mobile app</span> to take
+                your business to the{" "}
+                <span className={highlightClass}>📈next level?</span>
               </p>
+              <p className={baseClass}>Let’s turn your idea into reality!</p>
               <p className={baseClass}>
-                Feel free to reach out at{" "}
+                Reach out at{" "}
                 <a
                   href="mailto:timtb.dev@gmail.com"
-                  className={cn(
-                    "hover:text-brand-500 underline underline-offset-4",
-                    highlightClass,
-                  )}
+                  className={cn("hover:text-brand-500", highlightClass)}
                 >
                   timtb.dev@gmail.com
                 </a>
-                . Looking forward to connecting! 😊
               </p>
 
               <div className="flex flex-col gap-3">

@@ -1,5 +1,6 @@
 "use client";
 
+import FullRoundedButton from "@/components/ui/full-rounded-button";
 import Arrow from "@/components/ui/home/arrow";
 import BigButton from "@/components/ui/home/big-button";
 import Disclaimer from "@/components/ui/home/disclaimer";
@@ -12,12 +13,13 @@ export const RestaurantSection = () => {
   const highlightClass = "text-xl font-semibold text-white sm:text-2xl";
   return (
     <Section id="restaurant">
+      <FullRoundedButton emoji="👑" className="rotate-12" />
       <SectionTitle title="The Best Mongolian" highlight="Restaurants" />
-      <Disclaimer title="🇺🇸 Now Serving in the U.S. Only" />
+      <Disclaimer title="🌎 Worldwide" />
       <SectionSubtitle>
-        Carefully chosen from{" "}
-        <span className={highlightClass}>real reviews</span>, serving{" "}
-        <span className={highlightClass}>real</span> Mongolian food.
+        <span className={highlightClass}>🤌Handpicked</span> from{" "}
+        <span className={highlightClass}>📊real reviews</span>, serving{" "}
+        <span className={highlightClass}>🍖authentic</span> Mongolian food.
       </SectionSubtitle>
 
       <div className="flex items-center gap-2">

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { FaRegUserCircle as UserIcon } from "react-icons/fa";
-import FullRoundedButton from "./full-rounded-button";
+import FullRoundedButton from "../ui/full-rounded-button";
 
 const LoginButton = ({ className }: { className?: string }) => {
   return (

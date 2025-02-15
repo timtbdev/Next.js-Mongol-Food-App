@@ -12,7 +12,7 @@ const Section: FC<Props> = ({ id, children, className }) => {
     <section
       id={id}
       className={cn(
-        "relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-2 py-10 sm:px-20 sm:py-20",
+        "relative mx-auto flex w-full max-w-7xl flex-col items-center gap-5 px-2 py-10 sm:px-20 sm:py-20",
         className,
       )}
     >

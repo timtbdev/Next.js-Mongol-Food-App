@@ -1,6 +1,6 @@
+import FullRoundedButton from "@/components/ui/full-rounded-button";
 import { FC } from "react";
 import { PiBowlFoodFill as LogoIcon } from "react-icons/pi";
-import FullRoundedButton from "./full-rounded-button";
 
 interface Props {
   className?: string;

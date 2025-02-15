@@ -13,7 +13,7 @@ const Header = () => {
     <header className="border-dark-gray/50 sticky top-0 z-10 border-y-2 border-dashed bg-zinc-900 backdrop-blur-lg">
       <nav
         aria-label="Navigation"
-        className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2.5 md:py-5"
+        className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 md:px-6 md:py-5"
       >
         <div className="z-10 flex flex-1 justify-start">
           <LogoButton className="hidden md:flex" />
@@ -26,7 +26,6 @@ const Header = () => {
           currentPath={currentPath}
           className="hidden md:flex"
         />
-        <LogoButton className="flex md:hidden" />
 
         <div className="flex flex-1 justify-end">
           <LoginButton />
