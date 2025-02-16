@@ -4,12 +4,6 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   images: {
-    domains: [
-      "www.unspash.com",
-      "www.gettyimages.com",
-      "www.shutterstock.com",
-      "www.dreamstime.com",
-    ],
     remotePatterns: [
       {
         protocol: "https",

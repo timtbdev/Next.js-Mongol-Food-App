@@ -1,10 +1,10 @@
-import FullRoundedButton from "@/components/ui/full-rounded-button";
 import BigButton from "@/components/ui/home/big-button";
 import Card from "@/components/ui/home/card";
 import Section from "@/components/ui/home/section";
 import SectionSubtitle from "@/components/ui/home/section-subtitle";
 import SectionTitle from "@/components/ui/home/section-title";
 import { CategoryType } from "@/types";
+import Image from "next/image";
 import { FC } from "react";
 
 interface Props {
@@ -16,7 +16,13 @@ const DishesSection: FC<Props> = ({ categories }) => {
   return (
     <div className="border-dark-gray/50 w-full border-y-2 border-dashed bg-black/20">
       <Section id="dishes">
-        <FullRoundedButton emoji="🏆" />
+        <Image
+          src="/images/section-image-dishes.png"
+          alt="Genkhis Khan with Mongolian dishes"
+          width={176}
+          height={176}
+          className="size-44"
+        />
         <SectionTitle title="The Best Mongolian" highlight="dishes" />
         <SectionSubtitle>
           Mongolian food is <span className={highlightClass}>❤️hearty</span>,{" "}

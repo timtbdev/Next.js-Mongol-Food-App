@@ -1,15 +1,8 @@
-import { cn } from "@/lib/utils";
+import RoundedButtonLink from "@/components/ui/header/rounded-button-link";
 import { FaRegUserCircle as UserIcon } from "react-icons/fa";
-import FullRoundedButton from "../ui/full-rounded-button";
 
-const LoginButton = ({ className }: { className?: string }) => {
-  return (
-    <FullRoundedButton
-      url="/login"
-      Icon={UserIcon}
-      className={cn("group-hover:text-white", className)}
-    />
-  );
+const LoginButton = () => {
+  return <RoundedButtonLink url="/login" Icon={UserIcon} />;
 };
 
 export default LoginButton;

@@ -1,19 +1,25 @@
 "use client";
 
-import FullRoundedButton from "@/components/ui/full-rounded-button";
 import Arrow from "@/components/ui/home/arrow";
 import BigButton from "@/components/ui/home/big-button";
 import Disclaimer from "@/components/ui/home/disclaimer";
 import Section from "@/components/ui/home/section";
 import SectionSubtitle from "@/components/ui/home/section-subtitle";
 import SectionTitle from "@/components/ui/home/section-title";
+import Image from "next/image";
 import { StargazerLoading, StargazerMore } from "../ui/home/restaurant-avatar";
 
 export const RestaurantSection = () => {
   const highlightClass = "text-xl font-semibold text-white sm:text-2xl";
   return (
     <Section id="restaurant">
-      <FullRoundedButton emoji="👑" className="rotate-12" />
+      <Image
+        src="/images/section-image-restaurant.png"
+        alt="Genkhis Khan with Mongolian dishes"
+        width={176}
+        height={176}
+        className="size-44"
+      />
       <SectionTitle title="The Best Mongolian" highlight="Restaurants" />
       <Disclaimer title="🌎 Worldwide" />
       <SectionSubtitle>

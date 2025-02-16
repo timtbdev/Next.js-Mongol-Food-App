@@ -62,7 +62,7 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath, className }) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="fixed inset-0 z-40 bg-black/15 transition duration-100 ease-out data-[closed]:opacity-0"
+                  className="fixed inset-0 bg-zinc-900 transition duration-100 ease-out data-[closed]:opacity-0"
                 />
                 <PopoverPanel
                   static
