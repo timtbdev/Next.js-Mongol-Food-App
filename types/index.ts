@@ -36,3 +36,20 @@ export type CategoryType = {
   emoji: string;
   description: string;
 };
+
+export type DishType = {
+  name: string;
+  slug: string;
+  description: string;
+  calories: { kcals: number; emoji: string };
+  burnTime: { duration: string; emoji: string };
+  dishEmoji: string;
+  taste: {
+    level: string;
+    emoji: string;
+  };
+  health: string;
+  rank: string;
+  wikipedia: string;
+  photoUrl: string;
+};
