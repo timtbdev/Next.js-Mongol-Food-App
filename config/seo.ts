@@ -2,7 +2,7 @@ import { SeoType } from "@/types";
 
 // This file contains the core meta data for the application
 const seoConfig: SeoType = {
-  title: "Mongolian Food | This Way!",
+  title: "Mongolian Food",
   subTitle: " Mongolian food is hearty, bold, and full of surprises!",
   ogImage: "/images/opengraph-image.png",
   twitterImage: "/images/twitter-image.png",
@@ -12,7 +12,7 @@ const seoConfig: SeoType = {
     twitterAddress: "@timtbdev",
     email: "timtb.dev@gmail.com",
   },
-  description: "Find the best Mongolian dishes, restaurants, and recipes.",
+  description: "Top Mongolian dishes, recipes, and restaurants worldwide.",
   tags: [
     // Mongolian food must-tries
     "Mongolian food",
