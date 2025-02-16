@@ -1,4 +1,3 @@
-import FullRoundedButton from "@/components/ui/full-rounded-button";
 import { cn } from "@/lib/utils";
 import React, { FC } from "react";
 
@@ -17,7 +16,9 @@ const DesktopTableHeading: FC<Props> = ({
 }) => {
   return (
     <div className={cn("flex items-center gap-x-6 px-2", className)}>
-      <FullRoundedButton emoji={emoji} />
+      <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-zinc-800">
+        <span className="absolute -left-1 -top-1 text-7xl">{emoji}</span>
+      </div>
       <div>
         <h3 className="text-4xl font-semibold tracking-tight text-white">
           {title}

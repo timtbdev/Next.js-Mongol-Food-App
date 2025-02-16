@@ -1,5 +1,4 @@
 import BigButton from "@/components/ui/home/big-button";
-import Disclaimer from "@/components/ui/home/disclaimer";
 import Section from "@/components/ui/home/section";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
