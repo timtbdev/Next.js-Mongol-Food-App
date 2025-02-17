@@ -108,7 +108,7 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath, className }) => {
                                 <CloseButton
                                   as={Link}
                                   key={subMenuItem.slug}
-                                  href={subMenuItem.slug}
+                                  href={`/dishes/category/${subMenuItem.slug}`}
                                   className="group inline-flex w-full items-center gap-x-4 rounded-full bg-zinc-900 px-4 py-2 hover:bg-zinc-800"
                                   onClick={close}
                                 >

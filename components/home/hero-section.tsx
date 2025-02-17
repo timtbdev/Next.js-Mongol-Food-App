@@ -39,16 +39,14 @@ const HeroSection = () => {
       </h1>
       <div className="flex flex-col items-center gap-6">
         <ul className="grid gap-1 text-lg/7">
-          <li className="flex items-center gap-2">
-            <span className="-rotate-12 text-4xl">🍲</span>
+          <li className="mx-auto flex items-center gap-2">
             <div className="inline-flex items-center gap-1 font-semibold text-zinc-400 sm:text-xl">
-              Top Dishes
+              <span className="-rotate-12 text-4xl">🍲</span>Top Dishes
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <span className="rotate-12 text-4xl">🍽️</span>
             <div className="inline-flex items-center gap-1 font-semibold text-zinc-400 sm:text-xl">
-              Best Restaurants
+              <span className="rotate-12 text-4xl">🍽️</span>Best Restaurants
             </div>
           </li>
         </ul>

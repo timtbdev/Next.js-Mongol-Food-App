@@ -53,7 +53,7 @@ export async function generateMetaDataForCategoryDishes(
 // Dishes: Get a single category of dishes
 export function getSingleCategoryForDishes(slug: string) {
   const category = categoriesForDishes.find(
-    (category) => category.slug === `/${slug}`,
+    (category) => category.slug === slug,
   );
 
   if (!category) {

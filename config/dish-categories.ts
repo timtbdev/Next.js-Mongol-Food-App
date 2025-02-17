@@ -3,7 +3,7 @@ import { DishCategoryType } from "@/types";
 const categoriesForDishes: DishCategoryType[] = [
   {
     title: "Meat Dishes",
-    slug: "/meat",
+    slug: "meat",
     emoji: "🥩",
     description: "Mongolian meals packed with hearty, flavorful meats.",
     seoKeywords: [
@@ -24,7 +24,7 @@ const categoriesForDishes: DishCategoryType[] = [
   },
   {
     title: "Dairy Foods",
-    slug: "/dairy",
+    slug: "dairy",
     emoji: "🥛",
     description: "Milk-based treats from cheese to fermented drinks.",
     seoKeywords: [
@@ -45,7 +45,7 @@ const categoriesForDishes: DishCategoryType[] = [
   },
   {
     title: "Breads & Dough",
-    slug: "/breads",
+    slug: "breads",
     emoji: "🍞",
     description: "Crispy, soft, and fried breads loved by Mongolians.",
     seoKeywords: [
@@ -66,7 +66,7 @@ const categoriesForDishes: DishCategoryType[] = [
   },
   {
     title: "Beverages",
-    slug: "/beverages",
+    slug: "beverages",
     emoji: "🍹",
     description: "Traditional Mongolian drinks, from mild to strong.",
     seoKeywords: [
@@ -87,7 +87,7 @@ const categoriesForDishes: DishCategoryType[] = [
   },
   {
     title: "Soups & Stews",
-    slug: "/soups",
+    slug: "soups",
     emoji: "🍲",
     description: "Warm, rich broths perfect for cold weather.",
     seoKeywords: [
@@ -108,7 +108,7 @@ const categoriesForDishes: DishCategoryType[] = [
   },
   {
     title: "Exotic Foods",
-    slug: "/exotic",
+    slug: "exotic",
     emoji: "🍖",
     description: "Unique and rare Mongolian specialty dishes.",
     seoKeywords: [
