@@ -1,7 +1,6 @@
 import BigButton from "@/components/ui/home/big-button";
 import Section from "@/components/ui/home/section";
 import { cn } from "@/lib/utils";
-import { Check } from "lucide-react";
 import Image from "next/image";
 
 const HeroSection = () => {
@@ -41,17 +40,15 @@ const HeroSection = () => {
       <div className="flex flex-col items-center gap-6">
         <ul className="grid gap-1 text-lg/7">
           <li className="flex items-center gap-2">
-            <Check className="text-brand-400" size={24} />
-            <div className="inline-flex items-center gap-1 font-medium text-zinc-600 sm:text-xl">
-              Top Mongolian <span className="-rotate-12 text-4xl">🍲</span>
-              Dishes!
+            <span className="-rotate-12 text-4xl">🍲</span>
+            <div className="inline-flex items-center gap-1 font-semibold text-zinc-400 sm:text-xl">
+              Top Dishes
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <Check className="text-brand-400" size={24} />
-            <div className="inline-flex items-center gap-1 font-medium text-zinc-600 sm:text-xl">
-              Best Mongolian <span className="rotate-12 text-4xl">🍽️</span>
-              Restaurants!
+            <span className="rotate-12 text-4xl">🍽️</span>
+            <div className="inline-flex items-center gap-1 font-semibold text-zinc-400 sm:text-xl">
+              Best Restaurants
             </div>
           </li>
         </ul>

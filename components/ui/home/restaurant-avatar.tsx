@@ -46,7 +46,7 @@ export function StargazerMore() {
       )}
     >
       <Avatar className="flex size-10 items-center justify-center bg-zinc-800 ring-4 ring-zinc-800">
-        <p className="text-muted-dark text-xs font-semibold">99+</p>
+        <p className="text-muted-dark text-xs font-semibold">10+</p>
       </Avatar>
     </div>
   );

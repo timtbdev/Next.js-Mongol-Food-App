@@ -28,13 +28,22 @@ export type MenuItemType = {
   emoji: string;
   title: string;
   slug: string;
+  subMenuItems?: Array<SubMenuItemType>;
+};
+export type SubMenuItemType = {
+  title: string;
+  slug: string;
+  emoji: string;
+  description?: string;
+  seoKeywords?: Array<string>;
 };
 
 export type CategoryType = {
-  category: string;
+  title: string;
   slug: string;
   emoji: string;
   description: string;
+  seoKeywords: Array<string>;
 };
 
 export type DishType = {

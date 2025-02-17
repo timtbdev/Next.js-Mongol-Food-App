@@ -18,7 +18,7 @@ const Card: FC<Props> = ({ category }) => {
         </div>
 
         <h3 className="mb-2 mt-4 text-center text-lg font-semibold text-zinc-400">
-          {category.category}
+          {category.title}
         </h3>
         <p className="text-center text-sm text-zinc-500">
           {category.description}

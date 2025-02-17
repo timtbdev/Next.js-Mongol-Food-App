@@ -12,10 +12,9 @@ interface Props {
 }
 
 const DishesSection: FC<Props> = ({ categories }) => {
-  const highlightClass = "text-xl font-semibold text-white sm:text-2xl";
   return (
     <div className="border-dark-gray/50 w-full border-y-2 border-dashed bg-black/20">
-      <Section id="dishes">
+      <Section id="dishes" className="sm:pb-20">
         <Image
           src="/images/section-image-dishes.png"
           alt="Genkhis Khan with Mongolian dishes"
@@ -23,11 +22,9 @@ const DishesSection: FC<Props> = ({ categories }) => {
           height={176}
           className="size-44"
         />
-        <SectionTitle title="The Best Mongolian" highlight="dishes" />
+        <SectionTitle title="Top Mongolian" highlight="dishes" />
         <SectionSubtitle>
-          Mongolian food is <span className={highlightClass}>❤️hearty</span>,{" "}
-          <span className={highlightClass}>🥩bold</span>, and full of{" "}
-          <span className={highlightClass}>🎉surprises!</span>
+          We’ve gathered the best Mongolian recipes for you to try!
         </SectionSubtitle>
         <p className="max-w-2xl text-pretty text-center text-xl text-zinc-500 sm:text-2xl"></p>
         <div id="features">

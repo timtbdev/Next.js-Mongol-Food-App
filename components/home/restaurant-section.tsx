@@ -2,17 +2,14 @@
 
 import Arrow from "@/components/ui/home/arrow";
 import BigButton from "@/components/ui/home/big-button";
-import Disclaimer from "@/components/ui/home/disclaimer";
 import Section from "@/components/ui/home/section";
-import SectionSubtitle from "@/components/ui/home/section-subtitle";
 import SectionTitle from "@/components/ui/home/section-title";
 import Image from "next/image";
 import { StargazerLoading, StargazerMore } from "../ui/home/restaurant-avatar";
 
 export const RestaurantSection = () => {
-  const highlightClass = "text-xl font-semibold text-white sm:text-2xl";
   return (
-    <Section id="restaurant">
+    <Section id="restaurant" className="sm:pb-20">
       <Image
         src="/images/section-image-restaurant.png"
         alt="Genkhis Khan with Mongolian dishes"
@@ -20,17 +17,11 @@ export const RestaurantSection = () => {
         height={176}
         className="size-44"
       />
-      <SectionTitle title="The Best Mongolian" highlight="Restaurants" />
-      <Disclaimer title="🌎 Worldwide" />
-      <SectionSubtitle>
-        <span className={highlightClass}>🤌Handpicked</span> from{" "}
-        <span className={highlightClass}>📊real reviews</span>, serving{" "}
-        <span className={highlightClass}>🍖authentic</span> Mongolian food.
-      </SectionSubtitle>
+      <SectionTitle title="Best Mongolian" highlight="Restaurants" />
 
-      <div className="flex items-center gap-2">
+      <div className="mt-2 flex items-center gap-2">
         <div className="flex flex-wrap items-center justify-center">
-          {Array.from({ length: 20 }).map((_, i) => (
+          {Array.from({ length: 10 }).map((_, i) => (
             <StargazerLoading key={i} />
           ))}
           <StargazerMore />

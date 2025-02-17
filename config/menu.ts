@@ -1,4 +1,5 @@
 import { MenuItemType } from "@/types"; // Menu Configuration
+import dishesCategoryConfig from "./dish-categories";
 
 const menuConfig: MenuItemType[] = [
   {
@@ -10,6 +11,7 @@ const menuConfig: MenuItemType[] = [
     emoji: "🔥",
     title: "Dishes",
     slug: "/dishes",
+    subMenuItems: dishesCategoryConfig,
   },
   {
     emoji: "👨‍🍳",
@@ -17,9 +19,9 @@ const menuConfig: MenuItemType[] = [
     slug: "/restaurants",
   },
   {
-    emoji: "🤝",
-    title: "Contact",
-    slug: "/contact",
+    emoji: "📝",
+    title: "Blog",
+    slug: "/blog",
   },
 ];
 

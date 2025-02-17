@@ -4,12 +4,16 @@ import menuConfig from "@/config/menu";
 import { cn } from "@/lib/utils";
 import {
   CloseButton,
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
   Popover,
   PopoverBackdrop,
   PopoverButton,
   PopoverPanel,
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDownIcon } from "lucide-react";
 import { Link } from "next-view-transitions";
 import { FC } from "react";
 
@@ -79,26 +83,67 @@ const MobileNavigationLinks: FC<Props> = ({ currentPath, className }) => {
                   <ul className="space-y-4">
                     {menuConfig.map((menuItem) => (
                       <li key={menuItem.slug}>
-                        <CloseButton
-                          as={Link}
-                          href={menuItem.slug}
-                          className={`${
-                            currentPath === menuItem.slug
-                              ? "bg-zinc-800"
-                              : "border-dark-gray/50 border-2 border-dashed bg-zinc-900 hover:bg-zinc-800"
-                          } group inline-flex w-full gap-2 rounded-full px-6 py-4`}
-                          onClick={close}
-                        >
-                          <MenuEmoji
-                            currentPath={currentPath === menuItem.slug}
-                            emoji={menuItem.emoji}
-                            className="mr-4 text-2xl"
-                          />
-                          <MenuTitle
-                            title={menuItem.title}
-                            currentPath={currentPath === menuItem.slug}
-                          />
-                        </CloseButton>
+                        {menuItem.subMenuItems ? (
+                          <Disclosure>
+                            <DisclosureButton
+                              className={`${
+                                currentPath === menuItem.slug
+                                  ? "bg-zinc-800"
+                                  : "border-dark-gray/50 border-2 border-dashed bg-zinc-900 hover:bg-zinc-800"
+                              } group inline-flex w-full items-center gap-2 rounded-full px-6 py-4`}
+                            >
+                              <MenuEmoji
+                                currentPath={currentPath === menuItem.slug}
+                                emoji={menuItem.emoji}
+                                className="mr-4 text-2xl"
+                              />
+                              <MenuTitle
+                                title={menuItem.title}
+                                currentPath={currentPath === menuItem.slug}
+                              />
+                              <ChevronDownIcon className="size-4 text-zinc-400 group-hover:text-white" />
+                            </DisclosureButton>
+                            <DisclosurePanel className="pl-4 pr-10 pt-4 text-gray-500">
+                              {menuItem.subMenuItems?.map((subMenuItem) => (
+                                <CloseButton
+                                  as={Link}
+                                  key={subMenuItem.slug}
+                                  href={subMenuItem.slug}
+                                  className="group inline-flex w-full items-center gap-x-4 rounded-full bg-zinc-900 px-4 py-2 hover:bg-zinc-800"
+                                  onClick={close}
+                                >
+                                  <span className="text-lg group-hover:scale-125">
+                                    {subMenuItem.emoji}
+                                  </span>
+                                  <span className="text-md font-semibold text-zinc-400 group-hover:text-white">
+                                    {subMenuItem.title}
+                                  </span>
+                                </CloseButton>
+                              ))}
+                            </DisclosurePanel>
+                          </Disclosure>
+                        ) : (
+                          <CloseButton
+                            as={Link}
+                            href={menuItem.slug}
+                            className={`${
+                              currentPath === menuItem.slug
+                                ? "bg-zinc-800"
+                                : "border-dark-gray/50 border-2 border-dashed bg-zinc-900 hover:bg-zinc-800"
+                            } group inline-flex w-full gap-2 rounded-full px-6 py-4`}
+                            onClick={close}
+                          >
+                            <MenuEmoji
+                              currentPath={currentPath === menuItem.slug}
+                              emoji={menuItem.emoji}
+                              className="mr-4 text-2xl"
+                            />
+                            <MenuTitle
+                              title={menuItem.title}
+                              currentPath={currentPath === menuItem.slug}
+                            />
+                          </CloseButton>
+                        )}
                       </li>
                     ))}
                   </ul>

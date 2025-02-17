@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "@/styles/tailwind.css";
 import Footer from "@/components/footer/main";
 import Header from "@/components/header/main";
+import Celebration from "@/components/main/celebration";
 import Container from "@/components/main/container";
 import Main from "@/components/main/main";
 import TailwindIndicator from "@/components/tailwind-indicator";
@@ -205,6 +206,7 @@ export default function RootLayout({
         >
           <Main>
             <Header />
+            <Celebration />
             <Container>{children}</Container>
             <Footer />
           </Main>
