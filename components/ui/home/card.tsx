@@ -1,15 +1,15 @@
-import { CategoryType } from "@/types";
+import { DishCategoryType } from "@/types";
 import { Link } from "next-view-transitions";
 import { FC } from "react";
 
 export type Props = {
-  category: CategoryType;
+  category: DishCategoryType;
 };
 
 const Card: FC<Props> = ({ category }) => {
   return (
     <Link
-      href={`/category/${category.slug}`}
+      href={`/dishes/category/${category.slug}`}
       className="hover:border-dark-gray/50 group rounded-xl border-2 border-dashed border-black/20 bg-black/20 p-6 transition duration-150 ease-in-out hover:bg-black/40"
     >
       <div className="flex flex-col items-center">

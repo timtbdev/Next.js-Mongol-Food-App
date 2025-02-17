@@ -38,27 +38,34 @@ export type SubMenuItemType = {
   seoKeywords?: Array<string>;
 };
 
-export type CategoryType = {
-  title: string;
-  slug: string;
-  emoji: string;
-  description: string;
-  seoKeywords: Array<string>;
-};
-
-export type DishType = {
+export interface DishType {
   name: string;
   slug: string;
   description: string;
-  calories: { kcals: number; emoji: string };
-  burnTime: { duration: string; emoji: string };
+  calories: {
+    kcals: number;
+    emoji: string;
+  };
+  burnTime: {
+    duration: string;
+    emoji: string;
+  };
   dishEmoji: string;
   taste: {
     level: string;
     emoji: string;
   };
   health: string;
-  rank: string;
+  rank: number;
+  globalRanking: number;
+  category: string;
   wikipedia: string;
   photoUrl: string;
+}
+export type DishCategoryType = {
+  title: string;
+  slug: string;
+  emoji: string;
+  description: string;
+  seoKeywords: Array<string>;
 };

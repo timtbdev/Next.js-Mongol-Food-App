@@ -1,9 +1,9 @@
-import { CategoryType } from "@/types";
+import { DishCategoryType } from "@/types";
 
-const dishesCategoryConfig: CategoryType[] = [
+const categoriesForDishes: DishCategoryType[] = [
   {
     title: "Meat Dishes",
-    slug: "/meat-dishes",
+    slug: "/meat",
     emoji: "🥩",
     description: "Mongolian meals packed with hearty, flavorful meats.",
     seoKeywords: [
@@ -24,7 +24,7 @@ const dishesCategoryConfig: CategoryType[] = [
   },
   {
     title: "Dairy Foods",
-    slug: "/dairy-foods",
+    slug: "/dairy",
     emoji: "🥛",
     description: "Milk-based treats from cheese to fermented drinks.",
     seoKeywords: [
@@ -45,7 +45,7 @@ const dishesCategoryConfig: CategoryType[] = [
   },
   {
     title: "Breads & Dough",
-    slug: "/breads-dough",
+    slug: "/breads",
     emoji: "🍞",
     description: "Crispy, soft, and fried breads loved by Mongolians.",
     seoKeywords: [
@@ -87,7 +87,7 @@ const dishesCategoryConfig: CategoryType[] = [
   },
   {
     title: "Soups & Stews",
-    slug: "/soups-stews",
+    slug: "/soups",
     emoji: "🍲",
     description: "Warm, rich broths perfect for cold weather.",
     seoKeywords: [
@@ -108,7 +108,7 @@ const dishesCategoryConfig: CategoryType[] = [
   },
   {
     title: "Exotic Foods",
-    slug: "/exotic-foods",
+    slug: "/exotic",
     emoji: "🍖",
     description: "Unique and rare Mongolian specialty dishes.",
     seoKeywords: [
@@ -129,4 +129,4 @@ const dishesCategoryConfig: CategoryType[] = [
   },
 ];
 
-export default dishesCategoryConfig;
+export default categoriesForDishes;

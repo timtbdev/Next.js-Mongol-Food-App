@@ -61,7 +61,7 @@ const DesktopNavigationLinks: FC<Props> = ({ currentPath, className }) => {
                     <CloseButton
                       as={Link}
                       key={subMenuItem.title}
-                      href={subMenuItem.slug}
+                      href={`/dishes/category/${subMenuItem.slug}`}
                       prefetch={true}
                       className="group inline-flex w-full gap-x-2 rounded-lg px-3 py-2 text-lg font-semibold hover:bg-zinc-800"
                     >

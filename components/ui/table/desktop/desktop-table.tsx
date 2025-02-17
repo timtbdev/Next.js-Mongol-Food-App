@@ -1,3 +1,4 @@
+import { getMedallionEmoji } from "@/lib/utils";
 import { DishType } from "@/types";
 import Link from "next/link";
 import React, { FC } from "react";
@@ -13,7 +14,7 @@ const DesktopTable: FC<Props> = ({ dishes }) => {
         return (
           <tr key={dish.name}>
             <td className="whitespace-nowrap p-4 text-center text-3xl font-semibold text-green-500">
-              {dish.rank}
+              {getMedallionEmoji(dish.rank)}
             </td>
             <td className="justify-start whitespace-nowrap py-4">
               <div className="flex items-center px-4">
