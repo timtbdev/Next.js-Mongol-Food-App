@@ -32,7 +32,7 @@ const DesktopNavigationLinks: FC<Props> = ({ currentPath, className }) => {
                   className={cn(
                     "text-md group inline-flex items-center gap-2 rounded-full px-6 py-2 font-semibold",
                     {
-                      "hover:border-dark-gray/50 focus:outline-brand-500 border-2 border-zinc-900 bg-zinc-900 hover:border-dashed focus:outline-2 focus:outline-offset-2":
+                      "hover:border-dark-gray/50 focus: border-2 border-zinc-900 bg-zinc-900 outline-none hover:border-dashed":
                         currentPath !== menuItem.slug,
                       "border-2 border-zinc-800 bg-zinc-800 px-4 text-white":
                         currentPath === menuItem.slug,
