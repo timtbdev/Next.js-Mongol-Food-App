@@ -2,6 +2,7 @@ import BigButton from "@/components/ui/home/big-button";
 import Section from "@/components/ui/home/section";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { TextLoop } from "../motion/text-loop";
 
 const HeroSection = () => {
   return (
@@ -38,18 +39,20 @@ const HeroSection = () => {
         </span>
       </h1>
       <div className="flex flex-col items-center gap-6">
-        <ul className="grid gap-1 text-lg/7">
-          <li className="mx-auto flex items-center gap-2">
-            <div className="inline-flex items-center gap-1 font-semibold text-zinc-400 sm:text-xl">
-              <span className="-rotate-12 text-4xl">🍲</span>Top Dishes
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <div className="inline-flex items-center gap-1 font-semibold text-zinc-400 sm:text-xl">
-              <span className="rotate-12 text-4xl">🍽️</span>Best Restaurants
-            </div>
-          </li>
-        </ul>
+        <TextLoop interval={3} className="text-2xl font-semibold text-zinc-400">
+          <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
+            <span className="-rotate-12 text-4xl">🍲</span>
+            <span className="text-xl text-zinc-400">Top Mongolian Dishes</span>
+          </div>
+          <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
+            <span className="rotate-12 text-4xl">🍽️</span>
+            <span className="text-xl text-zinc-400">Best Restaurants</span>
+          </div>
+          <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
+            <span className="rotate-12 text-4xl">🇲🇳</span>
+            <span className="text-xl text-zinc-400">Naadam Festival</span>
+          </div>
+        </TextLoop>
       </div>
       <BigButton title="Check It Out!" url="/dishes/category/all" />
     </Section>

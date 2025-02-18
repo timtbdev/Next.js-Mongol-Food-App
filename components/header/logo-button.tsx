@@ -11,14 +11,14 @@ const LogoButton: FC<Props> = ({ className }) => {
   return (
     <Link
       href="/"
-      className={cn("group flex inline-flex items-center gap-2", className)}
+      className={cn("group inline-flex items-center gap-2", className)}
     >
       <Image
         src="/images/logo.png"
         alt="Mongolian Food Logo"
         width={176}
         height={176}
-        className="ring-brand-600 size-10 rounded-full bg-zinc-800 ring-1"
+        className="ring-brand-600 size-10 transform rounded-full bg-zinc-800 ring-1 transition-all duration-300 hover:scale-105"
       />
       <span className="text-lg font-bold text-zinc-400 group-hover:text-white">
         Mongol

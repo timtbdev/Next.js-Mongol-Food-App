@@ -1,5 +1,7 @@
 "use client";
 
+import { useReadingProgress } from "@/hooks/userReadingProgress";
+import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import LogoButton from "./logo-button";
 import DesktopNavigationLinks from "./navigation-links/desktop-navigation-links";
@@ -9,6 +11,7 @@ import SearchButton from "./search-button";
 const Header = () => {
   const path = usePathname();
   const currentPath = `/${path.split("/")[1]}`;
+  const completion = useReadingProgress();
   return (
     <header className="border-dark-gray/50 sticky top-0 z-10 border-y-2 border-dashed bg-zinc-900 backdrop-blur-lg">
       <nav
@@ -31,6 +34,12 @@ const Header = () => {
           <SearchButton />
         </div>
       </nav>
+      <motion.span
+        style={{ transform: `translateX(${completion - 100}%)` }}
+        className="from-brand-500/50 to-brand-900/50 absolute bottom-0 h-[1px] w-full bg-gradient-to-tl"
+        animate={{ transform: `translateX(${completion - 100}%)` }}
+        transition={{ duration: 0.5 }}
+      />
     </header>
   );
 };

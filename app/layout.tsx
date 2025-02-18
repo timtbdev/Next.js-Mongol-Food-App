@@ -7,6 +7,7 @@ import Celebration from "@/components/main/celebration";
 import Container from "@/components/main/container";
 import Main from "@/components/main/main";
 import TailwindIndicator from "@/components/tailwind-indicator";
+import ScrollProgress from "@/components/ui/scroll-progress";
 import seoConfig from "@/config/seo";
 import { cn, getBaseUrl } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -196,6 +197,7 @@ export default function RootLayout({
           className="selection:bg-brand-500 flex h-full flex-col bg-zinc-900 font-sans text-gray-200 antialiased selection:text-white"
           suppressHydrationWarning={true}
         >
+          <ScrollProgress />
           <Main>
             <Header />
             <Celebration />

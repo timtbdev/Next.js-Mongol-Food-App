@@ -6,6 +6,7 @@ import SectionTitle from "@/components/ui/home/section-title";
 import { DishCategoryType } from "@/types";
 import Image from "next/image";
 import { FC } from "react";
+import { AnimatedGroup } from "../motion/animated-group";
 
 interface Props {
   categories: DishCategoryType[];
