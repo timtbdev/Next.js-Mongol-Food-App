@@ -1,8 +1,8 @@
-# Mongol.Food 🇲🇳🔥
+# 🇲🇳🔥 Mongol.Food
 
 ![Github](https://github.com/user-attachments/assets/f38c9c6d-2c57-408f-9304-b7a2bc978ba5)
 
-## Introduction
+## 🚀 Introduction
 
 Most people think Mongolian food is just **BBQ and meat**—but there’s so much more! The problem? **No real guide** exists to showcase authentic Mongolian dishes, recipes, and where to eat them.
 
@@ -30,22 +30,10 @@ I designed this site **from scratch with HTML & TailwindCSS** to make the experi
 
 🌎 **Live Demo:** [Mongol.food](https://mongol.food)
 
-## 💻 Desktop View
+## 📸 Screenshots
 
 <img width="2055" alt="screen-01" src="https://github.com/user-attachments/assets/296e7523-3346-4f71-8424-86d0f1384610" />
 <img width="2056" alt="screen-02" src="https://github.com/user-attachments/assets/7782755f-1c9a-43fc-843c-2ab70e4e1ec9" />
-
-## 📱 Mobile View
-
-<img width="1432" alt="Screenshot 2025-02-11 at 5 14 07 AM" src="https://github.com/user-attachments/assets/c148770d-cfb8-43b7-b4bd-addf2d9a2a69" />
-
-## 📊 Desktop Performance
-
-<img width="995" alt="Screenshot 2025-02-11 at 5 26 25 AM" src="https://github.com/user-attachments/assets/ab2ecb87-677f-4463-ba3b-905bafb0ab38" />
-
-## 📊 Mobile Performance
-
-<img width="983" alt="Screenshot 2025-02-11 at 5 26 15 AM" src="https://github.com/user-attachments/assets/fb927413-73fd-4125-a4e7-6612382c92b1" />
 
 ## Project Details
 
