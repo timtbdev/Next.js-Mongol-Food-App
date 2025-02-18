@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Noto_Sans } from "next/font/google";
-import localFont from "next/font/local";
 import "@/styles/tailwind.css";
 import Footer from "@/components/footer/main";
 import Header from "@/components/header/main";
@@ -15,13 +14,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { ViewTransitions } from "next-view-transitions";
 import { Toaster } from "react-hot-toast";
 
-// Font Configuration
-const fontCode = localFont({
-  src: "../assets/JetBrainsMonoNL-Medium.ttf",
-  variable: "--font-code",
-});
-
-const inter = Bricolage_Grotesque({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -193,8 +186,7 @@ export default function RootLayout({
       <html
         lang="en"
         className={cn(
-          inter.variable,
-          fontCode.variable,
+          bricolage.variable,
           noto_sans.variable,
           "min-h-full scroll-smooth",
         )}
