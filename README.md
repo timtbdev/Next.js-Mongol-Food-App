@@ -32,8 +32,8 @@ I designed this site **from scratch with HTML & TailwindCSS** to make the experi
 
 ## 📸 Screenshots
 
-<img width="2055" alt="screen-01" src="https://github.com/user-attachments/assets/296e7523-3346-4f71-8424-86d0f1384610" />
-<img width="2056" alt="screen-02" src="https://github.com/user-attachments/assets/7782755f-1c9a-43fc-843c-2ab70e4e1ec9" />
+![Screenshot-1](https://github.com/user-attachments/assets/85e6651b-745b-41e6-be5f-b7ce06548633)
+![Screenshot-2)](https://github.com/user-attachments/assets/9bb1caa3-f99c-4b9c-a2f5-933b7ee4af41)
 
 ## Project Details
 
