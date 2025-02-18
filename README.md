@@ -44,9 +44,9 @@ I designed this site **from scratch with HTML & TailwindCSS** to make the experi
 
 - **`app`**: Contains the main application components.
 - **`components`**: Contains reusable UI components.
-- **`utils`**: Contains utility functions.
+- **`lib`**: Contains utility functions.
 - **`config`**: Contains data for SEO and Menu.
-- **`content`**: Contains data for Pages & Blog Posts.
+- **`content`**: Contains data.
 
 ### Configuration Files
 
