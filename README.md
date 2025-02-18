@@ -33,7 +33,10 @@ I designed this site **from scratch with HTML & TailwindCSS** to make the experi
 ## 📸 Screenshots
 
 ![Screenshot-1](https://github.com/user-attachments/assets/85e6651b-745b-41e6-be5f-b7ce06548633)
+
 ![Screenshot-2)](https://github.com/user-attachments/assets/9bb1caa3-f99c-4b9c-a2f5-933b7ee4af41)
+
+![Screenshot-3)](https://github.com/user-attachments/assets/ed0c1a6c-fbaf-4386-997c-eb770208e7fd)
 
 ## Project Details
 
