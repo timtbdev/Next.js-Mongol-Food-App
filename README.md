@@ -62,6 +62,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or feedback, reach out through:
 
+- Web: [timtb.dev](https://timtb.dev)
 - Email: timtb.dev@gmail.com
 - X: [@timtbdev](https://x.com/timtbdev)
 
