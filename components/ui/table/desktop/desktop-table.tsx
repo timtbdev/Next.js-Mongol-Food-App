@@ -4,17 +4,20 @@ import Link from "next/link";
 import React, { FC } from "react";
 
 interface Props {
+  slug: string;
   dishes: DishType[];
 }
 
-const DesktopTable: FC<Props> = ({ dishes }) => {
+const DesktopTable: FC<Props> = ({ slug, dishes }) => {
   return (
     <tbody className="divide-dark-gray/50 divide-y bg-[#22272e]">
-      {dishes.map((dish) => {
+      {dishes.map((dish, index) => {
         return (
-          <tr key={dish.name}>
+          <tr key={index}>
             <td className="whitespace-nowrap p-4 text-center text-3xl font-semibold text-green-500">
-              {getMedallionEmoji(dish.rank)}
+              {getMedallionEmoji(
+                slug === "all" ? dish.globalRanking : dish.rank,
+              )}
             </td>
             <td className="justify-start whitespace-nowrap py-4">
               <div className="flex items-center px-4">
@@ -28,7 +31,7 @@ const DesktopTable: FC<Props> = ({ dishes }) => {
                   >
                     {dish.name}
                   </Link>
-                  <div className="text-md mt-1 text-zinc-400">
+                  <div className="text-md mt-1 max-w-xs whitespace-normal text-zinc-400">
                     {dish.description}
                   </div>
                 </div>

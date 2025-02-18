@@ -1,10 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import LoginButton from "./login-button";
 import LogoButton from "./logo-button";
 import DesktopNavigationLinks from "./navigation-links/desktop-navigation-links";
 import MobileNavigationLinks from "./navigation-links/mobile-navigation-links";
+import SearchButton from "./search-button";
 
 const Header = () => {
   const path = usePathname();
@@ -28,7 +28,7 @@ const Header = () => {
         />
 
         <div className="flex flex-1 justify-end">
-          <LoginButton />
+          <SearchButton />
         </div>
       </nav>
     </header>

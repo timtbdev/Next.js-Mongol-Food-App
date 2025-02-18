@@ -19,9 +19,9 @@ const menuConfig: MenuItemType[] = [
     slug: "/restaurants",
   },
   {
-    emoji: "📝",
-    title: "Blog",
-    slug: "/blog",
+    emoji: "🇲🇳",
+    title: "Naadam",
+    slug: "/naadam",
   },
 ];
 

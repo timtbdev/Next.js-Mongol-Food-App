@@ -34,7 +34,7 @@ const DishesSection: FC<Props> = ({ categories }) => {
             ))}
           </div>
         </div>
-        <BigButton title="Find a Dish" url="/dishes" />
+        <BigButton title="Explore Now" url="/dishes/category/all" />
       </Section>
     </div>
   );

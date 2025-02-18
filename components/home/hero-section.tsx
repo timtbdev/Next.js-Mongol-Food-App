@@ -51,7 +51,7 @@ const HeroSection = () => {
           </li>
         </ul>
       </div>
-      <BigButton title="Check It Out!" url="/dishes" />
+      <BigButton title="Check It Out!" url="/dishes/category/all" />
     </Section>
   );
 };

@@ -5,6 +5,7 @@ import DesktopTableWrapper from "@/components/ui/table/desktop/desktop-table-wra
 import {
   generateMetaDataForCategoryDishes,
   getAllDishesByCategory,
+  getAllDishesOrderedByGlobalRanking,
   getSingleCategoryForDishes,
 } from "@/lib/utils";
 import { DishCategoryType } from "@/types";
@@ -29,7 +30,10 @@ export async function generateMetadata({
 export default async function BlogPage({ params }: Props) {
   const { slug } = await params;
   const category: DishCategoryType = getSingleCategoryForDishes(slug);
-  const dishes = getAllDishesByCategory(slug);
+  const dishes =
+    slug === "all"
+      ? getAllDishesOrderedByGlobalRanking()
+      : getAllDishesByCategory(slug);
   if (!dishes || dishes.length === 0) {
     return notFound();
   }
@@ -43,7 +47,7 @@ export default async function BlogPage({ params }: Props) {
         />
         <DesktopTableWrapper>
           <DesktopTableHead />
-          <DesktopTable dishes={dishes} />
+          <DesktopTable slug={slug} dishes={dishes} />
         </DesktopTableWrapper>
       </div>
     </div>

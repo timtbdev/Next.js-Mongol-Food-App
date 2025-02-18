@@ -67,6 +67,10 @@ export function getAllDishesByCategory(slug: string) {
   return allDishes.filter((dish) => dish.category === slug);
 }
 
+export function getAllDishesOrderedByGlobalRanking() {
+  return allDishes.sort((a, b) => a.globalRanking - b.globalRanking);
+}
+
 // Dishes: Get a medallion emoji for a rank
 export function getMedallionEmoji(rank: number) {
   switch (rank) {
