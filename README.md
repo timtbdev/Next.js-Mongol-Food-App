@@ -1,19 +1,33 @@
-## 🚀 Mongol Food Application | Next.js | Supabase
+## 🔥 Mongol Food Application
 
 ![Github](https://github.com/user-attachments/assets/f38c9c6d-2c57-408f-9304-b7a2bc978ba5)
 
-A modern, fully responsive portfolio template built with **Next.js 15** and **Tailwind CSS**. It includes **light/dark mode**, **MDX support**, and **SEO optimization** for high performance.
+# Mongol.Food 🇲🇳🔥
 
-### 🔹 Features
+## Why I Built **Mongol.Food**
 
-- 🚀 **Blazing fast & responsive**
-- ✨ **Minimalist, clean design**
-- 🔍 **SEO optimized (Automated)**
-- 📃 **MDX support for blog & content**
-- 🛠️ **Next.js 15 & Tailwind CSS**
-- 😎 **100% Open Source**
+Most people think Mongolian food is just **BBQ and meat**—but there’s so much more! The problem? **No real guide** exists to showcase authentic Mongolian dishes, recipes, and where to eat them.
 
-🌎 **Live Demo:** [timtb.dev](https://timtb.dev)
+So, I built **Mongol.Food**—a fun, engaging way to:  
+✅ Discover **real Mongolian food & recipes** 🍲  
+✅ Find **where to eat without tourist traps** 🏕️  
+✅ Learn **what to expect when traveling to Mongolia** ✈️  
+✅ Explore **festivals, events, and what locals actually eat** 🎉
+
+I designed this site **from scratch with TailwindCSS & HTML** to make the experience **engaging, memorable, and actually useful**—so you **eat the right dishes at the right places** and experience **Mongolian culture the right way**.
+
+## Tech Stack 🚀
+
+- **Next.js** – Fast, modern React framework
+- **TailwindCSS** – Beautiful and flexible styling
+- **Supabase** – Database and authentication
+- **HTML & CSS** – Custom design from scratch
+
+## Explore Mongolian Food 🥢
+
+Check it out: **[Mongol.Food](#)**
+
+🌎 **Live Demo:** [Mongol.food](https://mongol.food)
 
 ## 🌞 Light Mode
 
