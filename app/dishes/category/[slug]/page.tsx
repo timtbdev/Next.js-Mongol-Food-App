@@ -4,6 +4,7 @@ import DesktopTableHeading from "@/components/ui/table/desktop/desktop-table-hea
 import DesktopTableWrapper from "@/components/ui/table/desktop/desktop-table-wrapper";
 import {
   generateMetaDataForCategoryDishes,
+  getAllCategories,
   getAllDishesByCategory,
   getAllDishesOrderedByGlobalRanking,
   getSingleCategoryForDishes,
@@ -25,6 +26,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   return generateMetaDataForCategoryDishes(slug);
+}
+
+export async function generateStaticParams() {
+  const categories = await getAllCategories();
+  return categories.map((category: DishCategoryType) => ({
+    slug: category.slug,
+  }));
 }
 
 export default async function BlogPage({ params }: Props) {

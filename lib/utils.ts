@@ -1,3 +1,4 @@
+// Import necessary modules and configurations
 import { allDishes } from "@/config/all-dishes";
 import categoriesForDishes from "@/config/dish-categories";
 import seoConfig from "@/config/seo";
@@ -5,10 +6,12 @@ import { clsx, type ClassValue } from "clsx";
 import { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
 
+// Utility function to merge class names
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+// Utility function to get the base URL
 export function getBaseUrl(path: string = "") {
   const baseUrl =
     process.env.NODE_ENV === "development"
@@ -50,7 +53,12 @@ export async function generateMetaDataForCategoryDishes(
   };
 }
 
-// Dishes: Get a single category of dishes
+// Dishes: Get all categories of dishes
+export function getAllCategories() {
+  return categoriesForDishes;
+}
+
+// Dishes: Get a single category of dishes by slug
 export function getSingleCategoryForDishes(slug: string) {
   const category = categoriesForDishes.find(
     (category) => category.slug === slug,
@@ -63,10 +71,12 @@ export function getSingleCategoryForDishes(slug: string) {
   return category;
 }
 
+// Dishes: Get all dishes by category slug
 export function getAllDishesByCategory(slug: string) {
   return allDishes.filter((dish) => dish.category === slug);
 }
 
+// Dishes: Get all dishes ordered by global ranking
 export function getAllDishesOrderedByGlobalRanking() {
   return allDishes.sort((a, b) => a.globalRanking - b.globalRanking);
 }
