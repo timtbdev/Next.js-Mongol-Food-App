@@ -35,7 +35,7 @@ export async function generateMetaDataForCategoryDishes(
     title: `Mongolian Food | ${category.title}`,
     description:
       category.description.slice(0, 100) + ("..." as string) ||
-      "Mongolian dishes",
+      "Your Go-To App for Mongolian Food, Restaurants, and Travel Tips.",
     keywords: category.seoKeywords?.join(", ") || "Mongolian, dishes",
     openGraph: {
       title: `Mongolian Food | ${category.title}`,

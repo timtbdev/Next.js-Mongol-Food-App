@@ -4,15 +4,7 @@
 
 ## 🚀 Introduction
 
-Most people think Mongolian food is just **BBQ and meat**—but there’s so much more! The problem? **No real guide** exists to showcase authentic Mongolian dishes, recipes, and where to eat them.
-
-So, I built **Mongol.Food**—a fun, engaging way to:  
-✅ Discover **real Mongolian food & recipes** 🍲  
-✅ Find **where to eat without tourist traps** 🏕️  
-✅ Learn **what to expect when traveling to Mongolia** ✈️  
-✅ Explore **festivals, events, and what locals actually eat** 🎉
-
-I designed this site **from scratch with HTML & TailwindCSS** to make the experience **engaging, memorable, and actually useful**.
+This is an **Go-To** App for 🍲 **Mongolian Food**, 👨‍🍳 **Restaurants**, and 🧳 **Travel Tips**.
 
 ## Tech Stack 🚀
 

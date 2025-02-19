@@ -19,10 +19,10 @@ const HeroSection = () => {
           Mongolian{" "}
           <span
             className={cn(
-              "text-brand-400 relative whitespace-nowrap text-4xl font-bold sm:text-5xl md:text-6xl",
+              "relative whitespace-nowrap text-4xl font-bold text-brand-400 sm:text-5xl md:text-6xl",
             )}
           >
-            <span className="bg-brand-200/10 absolute -left-[2.5%] -top-[2.5%] z-0 h-[105%] w-[105%] -rotate-1" />{" "}
+            <span className="absolute -left-[2.5%] -top-[2.5%] z-0 h-[105%] w-[105%] -rotate-1 bg-brand-200/10" />{" "}
             Food
             <span
               className={cn(
@@ -50,7 +50,7 @@ const HeroSection = () => {
           </div>
           <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
             <span className="rotate-12 text-4xl">🇲🇳</span>
-            <span className="text-xl text-zinc-400">Naadam Festival</span>
+            <span className="text-xl text-zinc-400">Travel Tips</span>
           </div>
         </TextLoop>
       </div>

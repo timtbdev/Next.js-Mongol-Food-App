@@ -20,8 +20,8 @@ const menuConfig: MenuItemType[] = [
   },
   {
     emoji: "🇲🇳",
-    title: "Naadam",
-    slug: "/naadam",
+    title: "Travel Tips",
+    slug: "/travel-tips",
   },
 ];
 
