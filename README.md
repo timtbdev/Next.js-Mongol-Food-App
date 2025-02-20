@@ -4,7 +4,7 @@
 
 ## 🚀 Introduction
 
-Mongolian Food & Restaurant Finder helps you discover and enjoy authentic Mongolian cuisine.
+Mongolian Food & Restaurant Finder helps people discover and enjoy authentic Mongolian cuisine.
 
 ## 🚧 Work in Progress
 
