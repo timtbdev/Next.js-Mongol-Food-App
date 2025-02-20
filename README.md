@@ -1,10 +1,10 @@
 # 🇲🇳🔥 Mongol.Food
 
-![Github](https://github.com/user-attachments/assets/f38c9c6d-2c57-408f-9304-b7a2bc978ba5)
+<img width="1126" alt="Screenshot 2025-02-20 at 4 48 58 AM" src="https://github.com/user-attachments/assets/ae4c8f3d-407c-4aac-82ea-f90ef1c1118f" />
 
 ## 🚀 Introduction
 
-This is an **Go-To** App for 🍲 **Mongolian Food**, 👨‍🍳 **Restaurants**, and 🧳 **Travel Tips**.
+Mongolian Food & Restaurant Finder helps you discover and enjoy authentic Mongolian cuisine.
 
 ## 🚧 Work in Progress
 
