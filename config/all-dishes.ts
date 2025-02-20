@@ -1,3 +1,5 @@
+import { DishType } from "@/types";
+
 export const allDishes: DishType[] = [
   {
     name: "Buuz",
