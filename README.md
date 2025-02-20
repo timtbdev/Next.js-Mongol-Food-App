@@ -1,6 +1,6 @@
 # 🇲🇳🔥 Mongol.Food
 
-<img width="1126" alt="Screenshot 2025-02-20 at 4 48 58 AM" src="https://github.com/user-attachments/assets/ae4c8f3d-407c-4aac-82ea-f90ef1c1118f" />
+![opengraph-image](https://github.com/user-attachments/assets/e7fdc059-62f2-46aa-b50d-a77c4ee0f6e6)
 
 ## 🚀 Introduction
 
@@ -55,11 +55,11 @@ This project is actively being developed! Here’s what I’m currently working 
 
 ## 📸 Screenshots
 
-![Screenshot-1](https://github.com/user-attachments/assets/85e6651b-745b-41e6-be5f-b7ce06548633)
+<img width="2075" alt="s-01" src="https://github.com/user-attachments/assets/78cb7e62-c4ca-4845-b1cd-ce7ac9b4677d" />
 
-![Screenshot-2)](https://github.com/user-attachments/assets/9bb1caa3-f99c-4b9c-a2f5-933b7ee4af41)
+<img width="2076" alt="s-02" src="https://github.com/user-attachments/assets/d66d3b80-aa64-48bb-bc04-bfdb7bcfd23b" />
 
-![Screenshot-3)](https://github.com/user-attachments/assets/ed0c1a6c-fbaf-4386-997c-eb770208e7fd)
+<img width="2076" alt="s-03" src="https://github.com/user-attachments/assets/324817c3-2096-4d9a-af8e-2360bf3e1ddf" />
 
 ## Project Details
 
