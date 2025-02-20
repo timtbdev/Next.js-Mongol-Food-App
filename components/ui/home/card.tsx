@@ -1,28 +1,30 @@
-import { DishCategoryType } from "@/types";
+import { DishType } from "@/types";
 import { Link } from "next-view-transitions";
+import Image from "next/image";
 import { FC } from "react";
 
 export type Props = {
-  category: DishCategoryType;
+  dish: DishType;
 };
 
-const Card: FC<Props> = ({ category }) => {
+const Card: FC<Props> = ({ dish }) => {
   return (
     <Link
-      href={`/dishes/category/${category.slug}`}
-      className="hover:border-dark-gray/50 group rounded-xl border-2 border-dashed border-black/20 bg-black/20 p-6 transition duration-150 ease-in-out hover:bg-black/40"
+      href={`/dishes/detail/${dish.slug}`}
+      className="group rounded-xl border-2 border-dashed border-black/20 bg-black/20 p-6 transition duration-150 ease-in-out hover:border-dark-gray/50 hover:bg-black/40"
     >
       <div className="flex flex-col items-center">
-        <div className="flex items-center justify-center rounded-full bg-black/20 text-6xl duration-150 ease-in-out group-hover:rotate-3 group-hover:scale-125">
-          {category.emoji}
-        </div>
-
-        <h3 className="mb-2 mt-4 text-center text-lg font-semibold text-zinc-400">
-          {category.title}
+        <Image
+          src={dish.photoUrl}
+          alt={dish.name}
+          width={112}
+          height={112}
+          className="size-28"
+        />
+        <h3 className="mb-2 mt-4 text-center text-xl font-semibold text-zinc-400">
+          {dish.name}
         </h3>
-        <p className="text-center text-sm text-zinc-500">
-          {category.description}
-        </p>
+        <p className="text-center text-sm text-zinc-500">{dish.description}</p>
       </div>
     </Link>
   );

@@ -2,7 +2,6 @@ import BigButton from "@/components/ui/home/big-button";
 import Section from "@/components/ui/home/section";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { TextLoop } from "../motion/text-loop";
 
 const HeroSection = () => {
   return (
@@ -34,27 +33,13 @@ const HeroSection = () => {
             </span>
           </span>{" "}
         </span>
-        <span className="text-3xl font-bold text-zinc-300 sm:mt-3 sm:text-4xl md:text-5xl">
-          Eat Like a Warrior! ⚔️
-        </span>
       </h1>
-      <div className="flex flex-col items-center gap-6">
-        <TextLoop interval={3} className="text-2xl font-semibold text-zinc-400">
-          <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
-            <span className="-rotate-12 text-4xl">🍲</span>
-            <span className="text-xl text-zinc-400">Top Mongolian Dishes</span>
-          </div>
-          <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
-            <span className="rotate-12 text-4xl">🍽️</span>
-            <span className="text-xl text-zinc-400">Best Restaurants</span>
-          </div>
-          <div className="inline-flex items-center gap-2 font-semibold text-zinc-400 sm:text-xl">
-            <span className="rotate-12 text-4xl">🇲🇳</span>
-            <span className="text-xl text-zinc-400">Travel Tips</span>
-          </div>
-        </TextLoop>
-      </div>
-      <BigButton title="Check It Out!" url="/dishes/category/all" />
+      <h2>
+        <span className="text-lg font-semibold text-zinc-300 sm:text-2xl md:text-3xl">
+          Discover and enjoy authentic Mongolian food
+        </span>
+      </h2>
+      <BigButton title="Explore Now" url="/dishes/category/all" />
     </Section>
   );
 };

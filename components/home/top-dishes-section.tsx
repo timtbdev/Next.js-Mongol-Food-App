@@ -3,17 +3,14 @@ import Card from "@/components/ui/home/card";
 import Section from "@/components/ui/home/section";
 import SectionSubtitle from "@/components/ui/home/section-subtitle";
 import SectionTitle from "@/components/ui/home/section-title";
-import { DishCategoryType } from "@/types";
+import { getTopDishesByGlobalRanking } from "@/lib/utils";
+import { DishType } from "@/types";
 import Image from "next/image";
-import { FC } from "react";
 
-interface Props {
-  categories: DishCategoryType[];
-}
-
-const DishesSection: FC<Props> = ({ categories }) => {
+const TopDishesSection = () => {
+  const dishes: DishType[] = getTopDishesByGlobalRanking(6);
   return (
-    <div className="border-dark-gray/50 w-full border-y-2 border-dashed bg-black/20">
+    <div className="w-full border-y-2 border-dashed border-dark-gray/50 bg-black/20">
       <Section id="dishes" className="sm:pb-20">
         <Image
           src="/images/section-image-dishes.png"
@@ -29,15 +26,15 @@ const DishesSection: FC<Props> = ({ categories }) => {
         <p className="max-w-2xl text-pretty text-center text-xl text-zinc-500 sm:text-2xl"></p>
         <div id="features">
           <div className="mx-auto grid grid-cols-1 gap-6 px-6 sm:w-[80%] sm:grid-cols-2 sm:px-2 lg:grid-cols-3">
-            {categories.map((category) => (
-              <Card key={category.slug} category={category} />
+            {dishes.map((dish) => (
+              <Card key={dish.slug} dish={dish} />
             ))}
           </div>
         </div>
-        <BigButton title="Explore Now" url="/dishes/category/all" />
+        <BigButton title="Learn More" url="/dishes/category/all" />
       </Section>
     </div>
   );
 };
 
-export default DishesSection;
+export default TopDishesSection;

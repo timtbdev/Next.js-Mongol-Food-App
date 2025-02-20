@@ -81,6 +81,12 @@ export function getAllDishesOrderedByGlobalRanking() {
   return allDishes.sort((a, b) => a.globalRanking - b.globalRanking);
 }
 
+export function getTopDishesByGlobalRanking(limit: number) {
+  return allDishes
+    .sort((a, b) => a.globalRanking - b.globalRanking)
+    .slice(0, limit);
+}
+
 // Dishes: Get a medallion emoji for a rank
 export function getMedallionEmoji(rank: number) {
   switch (rank) {

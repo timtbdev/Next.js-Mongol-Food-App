@@ -6,6 +6,14 @@
 
 This is an **Go-To** App for 🍲 **Mongolian Food**, 👨‍🍳 **Restaurants**, and 🧳 **Travel Tips**.
 
+## 🚧 Work in Progress
+
+This project is actively being developed! Here’s what I’m currently working on:
+
+- ✅ Completed: Core features like **listing, search, and authentication**
+- 🔄 In Progress: **Admin dashboard, ranking system, and SEO improvements**
+- 🔜 Coming Soon: **Newsletter integration and enhanced UI components**
+
 ## ✨ Features
 
 - 🍽️ **Interactive Listing** – Browse foods & restaurants with rich details
