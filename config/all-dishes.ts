@@ -14,8 +14,7 @@ export const allDishes: DishType[] = [
     globalRanking: 1,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Buuz",
-    photoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Buuz_Mongolian_Dumplings.jpg",
+    photoUrl: "/images/dishes/meat-dishes/buuz.png",
   },
   {
     name: "Khuushuur",
@@ -30,8 +29,7 @@ export const allDishes: DishType[] = [
     globalRanking: 2,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Khuushuur",
-    photoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Khuushuur.jpg",
+    photoUrl: "/images/dishes/meat-dishes/khuushuur.png",
   },
   {
     name: "Tsuivan",
@@ -46,7 +44,7 @@ export const allDishes: DishType[] = [
     globalRanking: 3,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Tsuivan",
-    photoUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Tsuivan.jpg",
+    photoUrl: "/images/dishes/meat-dishes/tsuivan.png",
   },
   {
     name: "Khorkhog",
@@ -61,8 +59,7 @@ export const allDishes: DishType[] = [
     globalRanking: 4,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Khorkhog",
-    photoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Khorkhog.jpg",
+    photoUrl: "/images/dishes/meat-dishes/khorkhog.png",
   },
   {
     name: "Boodog",
@@ -77,7 +74,7 @@ export const allDishes: DishType[] = [
     globalRanking: 5,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Boodog",
-    photoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Boodog.jpg",
+    photoUrl: "/images/dishes/meat-dishes/boodog.png",
   },
   {
     name: "Shorlog",
@@ -92,7 +89,7 @@ export const allDishes: DishType[] = [
     globalRanking: 6,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Shorlog",
-    photoUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Shorlog.jpg",
+    photoUrl: "/images/dishes/meat-dishes/shorlog.png",
   },
   {
     name: "Chanasan Makh",
@@ -107,8 +104,7 @@ export const allDishes: DishType[] = [
     globalRanking: 7,
     category: "meat",
     wikipedia: "https://en.wikipedia.org/wiki/Chanasan_makh",
-    photoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Chanasan_Makh.jpg",
+    photoUrl: "/images/dishes/meat-dishes/chanasan-makh.png",
   },
   {
     name: "Horhog",
@@ -384,8 +380,7 @@ export const allDishes: DishType[] = [
     globalRanking: 5,
     category: "beverages",
     wikipedia: "https://en.wikipedia.org/wiki/Suutei_tsai",
-    photoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Suutei_Tsai_Mongolian_Milk_Tea.jpg",
+    photoUrl: "/images/dishes/beverages/suutei-tsai.png",
   },
   {
     name: "Airag",

@@ -1,5 +1,6 @@
 import { getMedallionEmoji } from "@/lib/utils";
 import { DishType } from "@/types";
+import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 
@@ -10,7 +11,7 @@ interface Props {
 
 const DesktopTable: FC<Props> = ({ slug, dishes }) => {
   return (
-    <tbody className="divide-dark-gray/50 divide-y bg-[#22272e]">
+    <tbody className="divide-y divide-dark-gray/50 bg-[#22272e]">
       {dishes.map((dish, index) => {
         return (
           <tr key={index}>
@@ -21,13 +22,19 @@ const DesktopTable: FC<Props> = ({ slug, dishes }) => {
             </td>
             <td className="justify-start whitespace-nowrap py-4">
               <div className="flex items-center px-4">
-                <span className="text-3xl">{dish.dishEmoji}</span>
+                <Image
+                  src={dish.photoUrl}
+                  height={64}
+                  width={64}
+                  className="size-16"
+                  alt={dish.name}
+                />
                 <div className="ml-4">
                   <Link
                     href={dish.wikipedia}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-brand-500 text-lg font-semibold text-white underline underline-offset-4"
+                    className="text-lg font-semibold text-white underline underline-offset-4 hover:text-brand-500"
                   >
                     {dish.name}
                   </Link>
