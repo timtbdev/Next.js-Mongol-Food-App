@@ -6,13 +6,11 @@
 
 Mongolian Food & Restaurant Finder helps people discover and enjoy authentic Mongolian cuisine.
 
+🌎 **Live Demo:** [Mongol.food](https://mongol.food)
+
 ## 🚧 Work in Progress
 
 This project is actively being developed! Here’s what I’m currently working on:
-
-- ✅ Completed: Core features like **listing, search, and authentication**
-- 🔄 In Progress: **Admin dashboard, ranking system, and SEO improvements**
-- 🔜 Coming Soon: **Newsletter integration and enhanced UI components**
 
 ## 🍽️ Features
 
@@ -50,8 +48,6 @@ This project is actively being developed! Here’s what I’m currently working 
 | **Lucide-React**    | 🎨 Beautiful, customizable icon set for React apps       | ✅ Integrated  |
 | **React-Icons**     | 🔤 Collection of popular icon packs for React            | ✅ Integrated  |
 | **Code Quality**    | ✅ **ESLint & Prettier** for clean and consistent code   | ✅ Integrated  |
-
-🌎 **Live Demo:** [Mongol.food](https://mongol.food)
 
 ## 📸 Screenshots
 
