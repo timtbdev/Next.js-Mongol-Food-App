@@ -16,40 +16,40 @@ This project is actively being developed! Here’s what I’m currently working 
 
 ## 🍽️ Features
 
-| 🚀 Feature              | 🔍 Description                                      |
-| ----------------------- | --------------------------------------------------- |
-| **Interactive Listing** | 🍽️ Browse foods & restaurants with rich details     |
-| **Search**              | 🔍 Find restaurants and dishes quickly              |
-| **Paging**              | 📄 Smooth navigation for large lists                |
-| **Login**               | 🔐 Secure authentication for users                  |
-| **Ranking**             | ⭐ Vote and rank the best restaurants & dishes      |
-| **Reviews**             | 📝 Share dining experiences with ratings            |
-| **Commenting**          | 💬 Engage with reviews & discussions                |
-| **User Dashboard**      | 👤 Manage profile, favorites & activity             |
-| **Admin Dashboard**     | 🛠️ Control listings, users & content                |
-| **Blog**                | 📝 Discover articles on Mongolian cuisine & culture |
-| **Newsletter**          | 📩 Get updates on new restaurants & food trends     |
-| **SEO Optimization**    | 📈 Improve discoverability on search engines        |
+| 🚀 Feature              | 🔍 Description                                      | 📌 Status      |
+| ----------------------- | --------------------------------------------------- | -------------- |
+| **Interactive Listing** | 🍽️ Browse foods & restaurants with rich details     | ✅ Completed   |
+| **Search**              | 🔍 Find restaurants and dishes quickly              | 🔄 In Progress |
+| **Paging**              | 📄 Smooth navigation for large lists                | 🔄 In Progress |
+| **Login**               | 🔐 Secure authentication for users                  | ⏳ Coming Soon |
+| **Ranking**             | ⭐ Vote and rank the best restaurants & dishes      | ⏳ Coming Soon |
+| **Reviews**             | 📝 Share dining experiences with ratings            | ⏳ Coming Soon |
+| **Commenting**          | 💬 Engage with reviews & discussions                | ⏳ Coming Soon |
+| **User Dashboard**      | 👤 Manage profile, favorites & activity             | ⏳ Coming Soon |
+| **Admin Dashboard**     | 🛠️ Control listings, users & content                | ⏳ Coming Soon |
+| **Blog**                | 📝 Discover articles on Mongolian cuisine & culture | ⏳ Coming Soon |
+| **Newsletter**          | 📩 Get updates on new restaurants & food trends     | ⏳ Coming Soon |
+| **SEO Optimization**    | 📈 Improve discoverability on search engines        | ✅ Completed   |
 
 ## 🚀 Tech Stack
 
-| 🚀 Technology       | 🔍 Description                                           |
-| ------------------- | -------------------------------------------------------- |
-| **Next.js**         | ⚡ Fast, modern React framework                          |
-| **TailwindCSS**     | 🎨 Beautiful and flexible styling                        |
-| **Supabase**        | 🛠️ Database, authentication, and real-time capabilities  |
-| **Prisma**          | 🏗️ Next-generation ORM for database management           |
-| **TanStack Query**  | 🔄 Powerful async state management for data fetching     |
-| **Nuqs**            | 🔍 Type-safe search params state manager for React       |
-| **Resend**          | 📧 API for sending transactional emails effortlessly     |
-| **React Email**     | 💌 Build and send beautiful, responsive emails in React  |
-| **Headless UI**     | 🏗️ Accessible and unstyled UI components                 |
-| **Shadcn UI**       | 🎛️ Pre-styled modern UI components for rapid development |
-| **Next-MDX-Remote** | 📜 MDX support for dynamic, content-rich pages           |
-| **Framer Motion**   | 🎬 Smooth animations and gesture interactions            |
-| **Lucide-React**    | 🎨 Beautiful, customizable icon set for React apps       |
-| **React-Icons**     | 🔤 Collection of popular icon packs for React            |
-| **Code Quality**    | ✅ **ESLint & Prettier** for clean and consistent code   |
+| 🚀 Technology       | 🔍 Description                                           | 📌 Status      |
+| ------------------- | -------------------------------------------------------- | -------------- |
+| **Next.js**         | ⚡ Fast, modern React framework                          | ✅ Integrated  |
+| **TailwindCSS**     | 🎨 Beautiful and flexible styling                        | ✅ Integrated  |
+| **Supabase**        | 🛠️ Database, authentication, and real-time capabilities  | 🔄 Coming Soon |
+| **Prisma**          | 🏗️ Next-generation ORM for database management           | 🔄 Coming Soon |
+| **TanStack Query**  | 🔄 Powerful async state management for data fetching     | 🔄 Coming Soon |
+| **Nuqs**            | 🔍 Type-safe search params state manager for React       | 🔄 Coming Soon |
+| **Resend**          | 📧 API for sending transactional emails effortlessly     | 🔄 Coming Soon |
+| **React Email**     | 💌 Build and send beautiful, responsive emails in React  | 🔄 Coming Soon |
+| **Headless UI**     | 🏗️ Accessible and unstyled UI components                 | ✅ Integrated  |
+| **Shadcn UI**       | 🎛️ Pre-styled modern UI components for rapid development | ✅ Integrated  |
+| **Next-MDX-Remote** | 📜 MDX support for dynamic, content-rich pages           | 🔄 Coming Soon |
+| **Framer Motion**   | 🎬 Smooth animations and gesture interactions            | ✅ Integrated  |
+| **Lucide-React**    | 🎨 Beautiful, customizable icon set for React apps       | ✅ Integrated  |
+| **React-Icons**     | 🔤 Collection of popular icon packs for React            | ✅ Integrated  |
+| **Code Quality**    | ✅ **ESLint & Prettier** for clean and consistent code   | ✅ Integrated  |
 
 🌎 **Live Demo:** [Mongol.food](https://mongol.food)
 
