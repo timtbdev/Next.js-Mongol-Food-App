@@ -6,19 +6,39 @@
 
 This is an **Go-To** App for 🍲 **Mongolian Food**, 👨‍🍳 **Restaurants**, and 🧳 **Travel Tips**.
 
+## ✨ Features
+
+- 🍽️ **Interactive Listing** – Browse foods & restaurants with rich details
+- 🔍 **Search** – Find restaurants and dishes quickly
+- 📄 **Paging** – Smooth navigation for large lists
+- 🔐 **Login** – Secure authentication for users
+- ⭐ **Ranking** – Vote and rank the best restaurants & dishes
+- 📝 **Reviews** – Share dining experiences with ratings
+- 💬 **Commenting** – Engage with reviews & discussions
+- 👤 **User Dashboard** – Manage profile, favorites & activity
+- 🛠️ **Admin Dashboard** – Control listings, users & content
+- 📝 **Blog** – Discover articles on Mongolian cuisine & culture
+- 📩 **Newsletter** – Get updates on new restaurants & food trends
+- 📈 **SEO Optimization** – Improve discoverability on search engines
+
 ## Tech Stack 🚀
 
-- **Next.js** – Fast, modern React framework
-- **TailwindCSS** – Beautiful and flexible styling
-- **Supabase** – Database and authentication
-- **Headless UI** – Accessible UI components
-- **Shadcn UI** – Pre-styled modern UI components
-- **Next-MDX-Remote** – MDX support for dynamic content
-- **Framer Motion** – Smooth animations and interactions
-- **Motion** – Advanced animation library
-- **Lucide-React** – Beautiful, customizable icons
-- **React-Icons** – Collection of popular icon packs
-- **Code Quality** - ESLint & Prettier
+- 🚀 **Next.js** – Fast, modern React framework
+- 🎨 **TailwindCSS** – Beautiful and flexible styling
+- ⚡ **Supabase** – Database, authentication, and real-time capabilities
+- 🏗️ **Prisma** – Next-generation ORM for database management
+- 🔄 **TanStack Query** – Powerful async state management for data fetching
+- 🔍 **Nuqs** – Type-safe search params state manager for React
+- 📧 **Resend** – API for sending transactional emails effortlessly
+- 💌 **React Email** – Build and send beautiful, responsive emails in React
+- 🏗️ **Headless UI** – Accessible and unstyled UI components
+- 🎛️ **Shadcn UI** – Pre-styled modern UI components for rapid development
+- 📜 **Next-MDX-Remote** – MDX support for dynamic, content-rich pages
+- 🎬 **Framer Motion** – Smooth animations and gesture interactions
+- 🏃‍♂️ **Motion** – Advanced animation library for React and Framer Motion
+- 🎨 **Lucide-React** – Beautiful, customizable icon set for React apps
+- 🔤 **React-Icons** – Collection of popular icon packs for React
+- ✅ **Code Quality** – **ESLint & Prettier** for clean and consistent code
 
 🌎 **Live Demo:** [Mongol.food](https://mongol.food)
 
