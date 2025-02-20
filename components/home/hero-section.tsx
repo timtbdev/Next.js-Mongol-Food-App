@@ -23,19 +23,14 @@ const HeroSection = () => {
           >
             <span className="absolute -left-[2.5%] -top-[2.5%] z-0 h-[105%] w-[105%] -rotate-1 bg-brand-200/10" />{" "}
             Food
-            <span
-              className={cn(
-                "hidden sm:inline-block",
-                "text-4xl font-bold text-zinc-300 sm:text-5xl md:text-6xl",
-              )}
-            >
+            <span className="items-center text-4xl font-bold text-zinc-300 sm:text-5xl md:text-6xl">
               🔥
             </span>
           </span>{" "}
         </span>
       </h1>
-      <h2>
-        <span className="text-lg font-semibold text-zinc-300 sm:text-2xl md:text-3xl">
+      <h2 className="mx-auto text-center">
+        <span className="text-2xl font-semibold text-zinc-300 md:text-3xl">
           Discover and enjoy authentic Mongolian food
         </span>
       </h2>
