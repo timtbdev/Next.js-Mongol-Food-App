@@ -5,7 +5,7 @@ import SocialMediaAccounts from "./social-media-accounts";
 const Footer = () => {
   return (
     <>
-      <footer className="border-dark-gray/50 border-y-2 border-dashed bg-black/20">
+      <footer className="bg-zinc-900">
         <div className="mx-auto max-w-7xl overflow-hidden p-6 sm:py-10 lg:px-8">
           <NavigationLinks className="hidden sm:flex" />
           <SocialMediaAccounts />
