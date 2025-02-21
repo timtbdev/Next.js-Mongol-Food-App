@@ -17,14 +17,16 @@ const Card: FC<Props> = ({ dish }) => {
         <Image
           src={dish.photoUrl}
           alt={dish.name}
-          width={112}
-          height={112}
-          className="size-28"
+          width={128}
+          height={128}
+          className="size-40 sm:size-32"
         />
-        <h3 className="mb-2 mt-4 text-center text-xl font-semibold text-zinc-400">
+        <h3 className="mb-2 mt-4 text-center text-3xl font-semibold text-zinc-400 group-hover:text-white sm:text-2xl">
           {dish.name}
         </h3>
-        <p className="text-center text-sm text-zinc-500">{dish.description}</p>
+        <p className="sm:text-md text-center text-lg text-zinc-500">
+          {dish.description}
+        </p>
       </div>
     </Link>
   );
