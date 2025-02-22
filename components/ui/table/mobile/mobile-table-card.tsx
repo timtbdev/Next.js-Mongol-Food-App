@@ -18,10 +18,7 @@ const MobileTableCard: FC<Props> = ({ category, dish, className = "" }) => {
         className,
       )}
     >
-      <p className="flex flex-1 flex-col p-2 text-5xl font-bold text-green-500">
-        {getMedallionEmoji(category === "all" ? dish.globalRanking : dish.rank)}
-      </p>
-      <div className="flex flex-1 flex-col p-2">
+      <div className="mt-4 flex flex-1 flex-col p-2">
         <Image
           alt={dish.name}
           src={dish.photoUrl}
@@ -29,6 +26,14 @@ const MobileTableCard: FC<Props> = ({ category, dish, className = "" }) => {
           height={192}
           className="mx-auto size-48"
         />
+        <div className="mt-2 flex w-full items-center justify-center">
+          <span className="mx-auto flex size-16 items-center justify-center rounded-full border-2 border-dark-gray text-5xl font-bold text-green-500">
+            {getMedallionEmoji(
+              category === "all" ? dish.globalRanking : dish.rank,
+            )}
+          </span>
+        </div>
+
         <h3 className="mt-2 text-3xl font-semibold text-white/80">
           {dish.name}
         </h3>
